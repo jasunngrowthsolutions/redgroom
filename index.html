@@ -1,0 +1,1159 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redgroom Events & Trip Planner | Explorer – Travel Beyond Boundaries</title>
+    <meta name="description" content="Premium travel planning, event management, and self-drive car rentals in Gurgaon, NCR, and worldwide.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#D4AF37',
+                        accent: '#FF6B35',
+                        surface: '#F8F9FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Redgroom Events & Trip Planner",
+            "url": "https://www.redgroom.com",
+            "logo": "https://www.redgroom.com/logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+917365027080",
+                "contactType": "customer service"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Redgroom Events & Trip Planner",
+            "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2000&q=80",
+            "@id": "https://www.redgroom.com",
+            "url": "https://www.redgroom.com",
+            "telephone": "+917365027080",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Neelkanth Enclave, Sector 69",
+                "addressLocality": "Gurgaon",
+                "postalCode": "122101",
+                "addressRegion": "Haryana",
+                "addressCountry": "IN"
+            },
+            "priceRange": "$$"
+        }
+    ]
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .selection\:bg-\[\#D4AF37\] *::selection { background-color: #D4AF37; color: white; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased bg-white selection:bg-[#D4AF37] pb-20 lg:pb-0">
+
+    <!-- INITIAL LOADING SCREEN -->
+    <div id="loader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-opacity duration-500 bg-[#0A192F]">
+        <div class="w-16 h-16 rounded-xl border border-white/20 bg-white/10 flex items-center justify-center mb-6 shadow-2xl animate-pulse">
+            <span class="font-serif text-3xl font-bold text-white">R</span>
+        </div>
+        <div class="w-48 h-1 bg-white/20 rounded-full overflow-hidden">
+            <div class="h-full bg-[#D4AF37] animate-[pulse_1.2s_ease-in-out_infinite]" style="width: 100%;"></div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="flex items-center gap-3 cursor-pointer group" onclick="scrollToSection('home')" role="button" tabindex="0">
+                <div id="logo-icon" class="w-11 h-11 rounded-lg flex items-center justify-center transition-all duration-500 shadow-md bg-white/10 backdrop-blur-md border border-white/20">
+                    <span class="font-serif text-2xl font-bold text-white">R</span>
+                </div>
+                <div class="flex flex-col">
+                    <span id="logo-text" class="font-extrabold text-xl md:text-2xl tracking-wide transition-colors text-white drop-shadow-md">
+                        REDGROOM
+                    </span>
+                    <span id="logo-sub" class="text-[9px] md:text-[10px] tracking-[0.2em] uppercase font-bold transition-colors text-gray-200">
+                        Events & Trip Planner
+                    </span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-8 bg-white/5 backdrop-blur-sm rounded-full px-6 py-2 border border-white/10">
+                <button onclick="scrollToSection('travel')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Travel</button>
+                <button onclick="scrollToSection('events')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Events</button>
+                <button onclick="scrollToSection('rentals')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Rentals</button>
+                <button onclick="scrollToSection('process')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Process</button>
+                <button onclick="scrollToSection('gallery')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Gallery</button>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-6">
+                <a id="header-phone" href="tel:7365027080" class="flex items-center gap-2 font-bold text-sm tracking-wide transition-colors text-white hover:text-gray-200">
+                    <i data-lucide="phone" class="w-4 h-4"></i> 7365027080
+                </a>
+                <button id="header-btn" onclick="scrollToSection('contact')" class="inline-flex items-center justify-center px-7 py-2.5 rounded-full font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#D4AF37] active:scale-95 text-sm bg-white text-gray-900 hover:bg-gray-50 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    Request Quote
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg focus-visible:ring-2 focus-visible:ring-[#D4AF37] text-white bg-white/20" aria-label="Toggle mobile menu">
+                <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl transition-all duration-300 origin-top overflow-hidden max-h-0">
+            <div class="p-6 flex flex-col gap-2">
+                <button onclick="scrollToSection('travel'); closeMobileMenu()" class="text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors active:bg-gray-100 min-h-[44px]">Travel</button>
+                <button onclick="scrollToSection('events'); closeMobileMenu()" class="text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors active:bg-gray-100 min-h-[44px]">Events</button>
+                <button onclick="scrollToSection('rentals'); closeMobileMenu()" class="text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors active:bg-gray-100 min-h-[44px]">Rentals</button>
+                <button onclick="scrollToSection('process'); closeMobileMenu()" class="text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors active:bg-gray-100 min-h-[44px]">Process</button>
+                <button onclick="scrollToSection('gallery'); closeMobileMenu()" class="text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors active:bg-gray-100 min-h-[44px]">Gallery</button>
+                <button onclick="scrollToSection('contact'); closeMobileMenu()" class="text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors active:bg-gray-100 min-h-[44px]">Contact</button>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-3">
+                    <button onclick="scrollToSection('contact'); closeMobileMenu()" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-opacity-90 shadow-xl w-full">Get a Quote</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[95vh] md:min-h-screen flex items-center pt-24 pb-16 lg:pb-0">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2000&q=80" alt="Luxury Travel and Premium Events" class="w-full h-full object-cover" fetchpriority="high">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#050B14]/95 via-[#0A192F]/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 text-white pt-10 lg:pt-0">
+                <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs md:text-sm font-bold tracking-widest mb-8 border border-white/20 bg-white/10 backdrop-blur-sm uppercase">
+                    <span class="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse"></span>
+                    Explorer – Travel Beyond Boundaries
+                </span>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
+                    Luxury Travel, <br class="hidden md:block">
+                    Exceptional Events & <br class="hidden md:block">
+                    Premium Self-Drive Cars.
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl font-medium">
+                    Plan unforgettable journeys, execute flawless events, and experience hassle-free road trips with a trusted partner that manages every detail.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row flex-wrap gap-4 mb-6">
+                    <button onclick="scrollToSection('travel')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1 w-full sm:w-auto">Plan My Trip</button>
+                    <button onclick="scrollToSection('events')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-[#0A192F] shadow-xl hover:-translate-y-1 w-full sm:w-auto">Organize My Event</button>
+                    <button onclick="scrollToSection('rentals')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-[#0A192F] shadow-xl hover:-translate-y-1 w-full sm:w-auto">Rent a Car</button>
+                </div>
+                
+                <div class="flex items-center gap-2 text-sm font-semibold text-gray-300 bg-black/20 inline-block py-2 px-4 rounded-lg backdrop-blur-sm border border-white/5">
+                    <i data-lucide="clock" class="w-4 h-4 text-[#D4AF37]"></i>
+                    Quick response from our experts within 30 minutes.
+                </div>
+            </div>
+
+            <!-- Hero Lead Form -->
+            <div class="lg:col-span-5 relative mt-8 lg:mt-0" id="hero-form-container">
+                <div id="hero-form-box" class="bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/20 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-[#D4AF37]"></div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Start Your Journey</h3>
+                    <p class="text-gray-500 mb-6 text-sm font-medium">Request a premium consultation today.</p>
+                    
+                    <form id="hero-form" class="space-y-4">
+                        <div>
+                            <label for="heroName" class="sr-only">Name</label>
+                            <input id="heroName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0A192F] outline-none transition-all bg-gray-50 text-gray-900" placeholder="Your Full Name">
+                        </div>
+                        <div>
+                            <label for="heroPhone" class="sr-only">Phone Number</label>
+                            <input id="heroPhone" type="tel" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0A192F] outline-none transition-all bg-gray-50 text-gray-900" placeholder="Phone Number">
+                        </div>
+                        <div>
+                            <label for="heroService" class="sr-only">Service Required</label>
+                            <div class="relative">
+                                <select id="heroService" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0A192F] outline-none transition-all bg-gray-50 text-gray-900 appearance-none font-medium">
+                                    <option value="">Select Service Required</option>
+                                    <option value="travel">Travel Planning</option>
+                                    <option value="events">Event Management</option>
+                                    <option value="rentals">Self-Drive Car Rental</option>
+                                </select>
+                                <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full py-4 text-lg inline-flex items-center justify-center rounded-full font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-opacity-90 shadow-xl hover:-translate-y-1 mt-2">
+                            Request Consultation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Success State (Hidden by default) -->
+                <div id="hero-success-box" class="hidden bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/20 h-full flex-col items-center justify-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-[#D4AF37] flex items-center justify-center mb-4 shadow-lg">
+                        <i data-lucide="check-circle" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Request Received</h3>
+                    <p class="text-gray-600 font-medium">Our specialists will contact you within 30 minutes.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CREDIBILITY SECTION -->
+    <section class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16 px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">Why Clients Trust Redgroom</h2>
+                <p class="text-lg md:text-xl font-medium leading-relaxed text-gray-600">Built on reliability, transparency, and a commitment to absolute excellence.</p>
+                <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                <!-- Items -->
+                <div class="flex gap-5 group">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
+                        <i data-lucide="shield" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">GST Registered Business</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Fully compliant and legally recognized entity ensuring secure transactions.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 group">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
+                        <i data-lucide="users" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Professional Planning Team</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Dedicated experts managing your travel, events, and rental needs.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 group">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
+                        <i data-lucide="file-text" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Transparent Pricing</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Clear, upfront quotations with absolutely no hidden charges.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 group">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
+                        <i data-lucide="check-circle" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Secure Booking Process</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Safe payment gateways and verified confirmation protocols.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 group">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
+                        <i data-lucide="clock" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Dedicated Support</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Responsive assistance available throughout your engagement with us.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 group">
+                    <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
+                        <i data-lucide="award" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personalized Consultation</h3>
+                        <p class="text-gray-600 font-medium leading-relaxed">Bespoke solutions tailored exclusively to your specific requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVEL PACKAGES SECTION -->
+    <section id="travel" class="py-24 bg-[#F8F9FA]">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="plane" class="w-6 h-6 text-[#FF6B35]"></i>
+                        <h4 class="text-sm font-extrabold uppercase tracking-widest text-[#FF6B35]">Travel Planning</h4>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Curated Travel Packages</h2>
+                </div>
+                <button onclick="scrollToSection('contact')" class="hidden md:flex mt-4 md:mt-0 inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Custom Trip Request</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Travel Card 1 -->
+                <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai Luxury Escape" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-900 shadow-sm border border-gray-200">Luxury Travel</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Dubai Luxury Escape</h3>
+                        <div class="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-4">
+                            <i data-lucide="clock" class="w-4 h-4"></i> 5 Days / 4 Nights
+                        </div>
+                        <div class="mb-8 flex-1">
+                            <p class="text-gray-600 text-sm font-medium leading-relaxed bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <strong class="text-gray-900 block mb-1">Highlights:</strong>
+                                Burj Khalifa, Desert Safari, Premium Dhow Cruise
+                            </p>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Request Package Details</button>
+                    </div>
+                </article>
+
+                <!-- Travel Card 2 -->
+                <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Thailand Family Package" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-900 shadow-sm border border-gray-200">Family Tour</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Thailand Family Package</h3>
+                        <div class="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-4">
+                            <i data-lucide="clock" class="w-4 h-4"></i> 6 Days / 5 Nights
+                        </div>
+                        <div class="mb-8 flex-1">
+                            <p class="text-gray-600 text-sm font-medium leading-relaxed bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <strong class="text-gray-900 block mb-1">Highlights:</strong>
+                                Phuket Island Hopping, Krabi Beaches, City Tour
+                            </p>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Request Package Details</button>
+                    </div>
+                </article>
+
+                <!-- Travel Card 3 -->
+                <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Honeymoon Retreat" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-900 shadow-sm border border-gray-200">Romantic Getaway</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Bali Honeymoon Retreat</h3>
+                        <div class="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-4">
+                            <i data-lucide="clock" class="w-4 h-4"></i> 7 Days / 6 Nights
+                        </div>
+                        <div class="mb-8 flex-1">
+                            <p class="text-gray-600 text-sm font-medium leading-relaxed bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <strong class="text-gray-900 block mb-1">Highlights:</strong>
+                                Private Villa, Seminyak, Ubud Culture, Uluwatu
+                            </p>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Request Package Details</button>
+                    </div>
+                </article>
+            </div>
+            <button onclick="scrollToSection('contact')" class="w-full mt-8 md:hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Custom Trip Request</button>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="py-24 bg-white">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="calendar" class="w-6 h-6 text-[#FF6B35]"></i>
+                        <h4 class="text-sm font-extrabold uppercase tracking-widest text-[#FF6B35]">Event Management</h4>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Comprehensive Event Services</h2>
+                </div>
+                <button onclick="scrollToSection('contact')" class="hidden md:flex mt-4 md:mt-0 inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Book an Event Consultation</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-[#0A192F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Destination Weddings" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white">Destination Weddings</h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 font-medium mb-4">End-to-end wedding planning team.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Venue Sourcing</li>
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Decor & Theme</li>
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Guest Hospitality</li>
+                            </ul>
+                        </div>
+                        <button class="text-sm font-bold text-[#0A192F] flex items-center gap-2 hover:text-[#FF6B35] transition-colors group min-h-[44px]" onclick="scrollToSection('contact')">
+                            Request Proposal <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Event 2 -->
+                <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-[#0A192F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Corporate Events" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white">Corporate Events</h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 font-medium mb-4">Professional corporate execution.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Conferences</li>
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Award Ceremonies</li>
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Annual Offsites</li>
+                            </ul>
+                        </div>
+                        <button class="text-sm font-bold text-[#0A192F] flex items-center gap-2 hover:text-[#FF6B35] transition-colors group min-h-[44px]" onclick="scrollToSection('contact')">
+                            Request Proposal <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Event 3 -->
+                <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-[#0A192F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="DJ & Entertainment Nights" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white">DJ & Entertainment Nights</h3>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div class="mb-6">
+                            <p class="text-sm text-gray-600 font-medium mb-4">High-energy entertainment production.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Artist Management</li>
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Sound & Light Setup</li>
+                                <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Stage Fabrication</li>
+                            </ul>
+                        </div>
+                        <button class="text-sm font-bold text-[#0A192F] flex items-center gap-2 hover:text-[#FF6B35] transition-colors group min-h-[44px]" onclick="scrollToSection('contact')">
+                            Request Proposal <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <button onclick="scrollToSection('contact')" class="w-full mt-8 md:hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Book an Event Consultation</button>
+        </div>
+    </section>
+
+    <!-- CAR RENTALS SECTION -->
+    <section id="rentals" class="py-24 bg-[#0A192F] text-white">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="car" class="w-6 h-6 text-[#D4AF37]"></i>
+                        <h4 class="text-sm font-extrabold uppercase tracking-widest text-[#D4AF37]">Self-Drive Rentals</h4>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Premium Vehicle Fleet</h2>
+                </div>
+                <button onclick="scrollToSection('contact')" class="hidden md:flex mt-4 md:mt-0 inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1">Check General Availability</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Car 1 -->
+                <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
+                    <div class="h-48 overflow-hidden p-3 pb-0">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Premium Hatchbacks" loading="lazy" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-4">Premium Hatchbacks</h3>
+                        <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
+                            <div class="bg-black/20 py-2 rounded-lg">5 Seats</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Manual / Auto</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Petrol / CNG</div>
+                            <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">Select Category</button>
+                    </div>
+                </article>
+
+                <!-- Car 2 -->
+                <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
+                    <div class="h-48 overflow-hidden p-3 pb-0">
+                        <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80" alt="Executive Sedans" loading="lazy" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-4">Executive Sedans</h3>
+                        <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
+                            <div class="bg-black/20 py-2 rounded-lg">5 Seats</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Automatic</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Petrol / Diesel</div>
+                            <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">Select Category</button>
+                    </div>
+                </article>
+
+                <!-- Car 3 -->
+                <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
+                    <div class="h-48 overflow-hidden p-3 pb-0">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Luxury SUVs" loading="lazy" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-4">Luxury SUVs</h3>
+                        <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
+                            <div class="bg-black/20 py-2 rounded-lg">7 Seats</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Automatic</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Diesel</div>
+                            <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">Select Category</button>
+                    </div>
+                </article>
+
+                <!-- Car 4 -->
+                <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
+                    <div class="h-48 overflow-hidden p-3 pb-0">
+                        <img src="https://images.unsplash.com/photo-1503376712341-ea1c74f51e1d?auto=format&fit=crop&w=800&q=80" alt="High-End Luxury" loading="lazy" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-4">High-End Luxury</h3>
+                        <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
+                            <div class="bg-black/20 py-2 rounded-lg">4-5 Seats</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Automatic</div>
+                            <div class="bg-black/20 py-2 rounded-lg">Petrol</div>
+                            <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
+                        </div>
+                        <button onclick="scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">Select Category</button>
+                    </div>
+                </article>
+            </div>
+            <button onclick="scrollToSection('contact')" class="w-full mt-8 md:hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1">Check General Availability</button>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="py-24 bg-white border-b border-gray-100">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16 px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">How We Work</h2>
+                <p class="text-lg md:text-xl font-medium leading-relaxed text-gray-600">A seamless, structured approach to planning your perfect experience.</p>
+                <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+            </div>
+            
+            <div class="relative max-w-5xl mx-auto mt-16">
+                <!-- Desktop Timeline Line -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-100 -translate-y-1/2 z-0"></div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 relative z-10">
+                    <div class="flex md:flex-col items-center md:text-center gap-6 md:gap-0 w-full md:w-1/4">
+                        <div class="w-16 h-16 shrink-0 rounded-2xl flex items-center justify-center text-xl font-bold md:mb-6 shadow-xl border-4 border-white bg-[#0A192F] text-white">01</div>
+                        <div>
+                            <h4 class="font-extrabold text-xl text-gray-900 mb-2">Consultation</h4>
+                            <p class="text-sm text-gray-500 font-medium leading-relaxed">Discuss your specific requirements, budget, and vision with our specialists.</p>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-col items-center md:text-center gap-6 md:gap-0 w-full md:w-1/4">
+                        <div class="w-16 h-16 shrink-0 rounded-2xl flex items-center justify-center text-xl font-bold md:mb-6 shadow-xl border-4 border-white bg-[#0A192F] text-white">02</div>
+                        <div>
+                            <h4 class="font-extrabold text-xl text-gray-900 mb-2">Planning</h4>
+                            <p class="text-sm text-gray-500 font-medium leading-relaxed">We curate bespoke itineraries, event proposals, or rental options.</p>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-col items-center md:text-center gap-6 md:gap-0 w-full md:w-1/4">
+                        <div class="w-16 h-16 shrink-0 rounded-2xl flex items-center justify-center text-xl font-bold md:mb-6 shadow-xl border-4 border-white bg-[#0A192F] text-white">03</div>
+                        <div>
+                            <h4 class="font-extrabold text-xl text-gray-900 mb-2">Confirmation</h4>
+                            <p class="text-sm text-gray-500 font-medium leading-relaxed">Review options, finalize details, and secure bookings safely.</p>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-col items-center md:text-center gap-6 md:gap-0 w-full md:w-1/4">
+                        <div class="w-16 h-16 shrink-0 rounded-2xl flex items-center justify-center text-xl font-bold md:mb-6 shadow-xl border-4 border-white bg-[#0A192F] text-white">04</div>
+                        <div>
+                            <h4 class="font-extrabold text-xl text-gray-900 mb-2">Execution</h4>
+                            <p class="text-sm text-gray-500 font-medium leading-relaxed">Enjoy a flawless experience while we manage on-ground logistics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-24 bg-[#F8F9FA]">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16 px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">Experience Portfolio</h2>
+                <p class="text-lg md:text-xl font-medium leading-relaxed text-gray-600">A visual journey through the moments we help create.</p>
+                <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterGallery('Travel')" class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-[#0A192F] text-white shadow-md active-tab" data-target="Travel">Travel</button>
+                <button onclick="filterGallery('Events')" class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-white text-gray-600 border border-gray-200" data-target="Events">Events</button>
+                <button onclick="filterGallery('Rentals')" class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-white text-gray-600 border border-gray-200" data-target="Rentals">Rentals</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <!-- Travel Images -->
+                <div class="gallery-item relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Travel" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <div class="gallery-item relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Travel" onclick="openLightbox('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Events Images -->
+                <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Events" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Events" onclick="openLightbox('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+
+                <!-- Rentals Images -->
+                <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Rentals" onclick="openLightbox('https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Rentals" onclick="openLightbox('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                        <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/95 backdrop-blur-md items-center justify-center p-4" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 p-2 rounded-full outline-none" onclick="event.stopPropagation(); closeLightbox()">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Fullscreen view" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- GOOGLE REVIEWS SECTION -->
+    <section class="py-24 bg-white border-b border-gray-100">
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 max-w-5xl mx-auto text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="w-8 h-8" loading="lazy">
+                <h3 class="text-2xl font-bold text-gray-900">Verified Customer Reviews</h3>
+            </div>
+
+            <!-- Loading State -->
+            <div id="google-reviews-loading" class="animate-pulse flex flex-col items-center">
+                <div class="h-8 bg-gray-200 rounded w-48 mb-6"></div>
+                <div class="grid md:grid-cols-3 gap-6 w-full">
+                    <div class="bg-gray-50 h-40 rounded-2xl border border-gray-100"></div>
+                    <div class="bg-gray-50 h-40 rounded-2xl border border-gray-100"></div>
+                    <div class="bg-gray-50 h-40 rounded-2xl border border-gray-100"></div>
+                </div>
+                <p class="text-gray-400 mt-6 text-sm font-medium">Fetching verified reviews securely...</p>
+            </div>
+
+            <!-- Empty API State (Shown after loading via JS) -->
+            <div id="google-reviews-empty" class="hidden py-12 flex-col items-center">
+                <div class="w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center mb-4 border border-gray-200">
+                    <i data-lucide="info" class="w-8 h-8 text-gray-400"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">API Connection Pending</h4>
+                <p class="text-gray-500 max-w-md mx-auto mb-6">
+                    Our live Google Reviews integration is currently being configured. 
+                    Once connected, authentic verified customer feedback will be displayed here directly from Google Maps.
+                </p>
+                <button onclick="window.open('https://google.com/search?q=Redgroom Events & Trip Planner', '_blank')" class="inline-flex items-center justify-center px-6 py-2 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white text-sm">
+                    View on Google <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-24 bg-[#F8F9FA]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto mb-16 px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">Frequently Asked Questions</h2>
+                <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-button w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]">
+                        <span class="font-extrabold text-gray-900 pr-4">Do you provide international travel packages?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-[#FF6B35]"></i>
+                    </button>
+                    <div class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <p class="text-gray-600 font-medium leading-relaxed pb-6">Yes, we curate fully customized international itineraries covering visa assistance, flights, accommodations, and local experiences across global destinations.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-button w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]">
+                        <span class="font-extrabold text-gray-900 pr-4">Can you organize destination weddings?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400"></i>
+                    </button>
+                    <div class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <p class="text-gray-600 font-medium leading-relaxed pb-6">Absolutely. We specialize in end-to-end destination wedding planning, including venue sourcing, vendor management, logistics, and on-ground execution anywhere in India.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="faq-button w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]">
+                        <span class="font-extrabold text-gray-900 pr-4">What types of corporate events do you manage?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400"></i>
+                    </button>
+                    <div class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                        <p class="text-gray-600 font-medium leading-relaxed pb-6">We handle everything from leadership offsites and team-building retreats to large-scale conferences, product launches, and annual award ceremonies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-[#0A192F] relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[1000px] h-[1000px] bg-white opacity-[0.02] rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+        
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Contact Form -->
+            <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Start Planning Today</h2>
+                <p class="text-gray-500 mb-8 font-medium">Submit your requirements and a specialist will be assigned to your request.</p>
+                
+                <form id="contact-form" class="space-y-5">
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="contactName" class="block text-sm font-bold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                            <input id="contactName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="e.g. John Doe">
+                        </div>
+                        <div>
+                            <label for="contactPhone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                            <input id="contactPhone" type="tel" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="contactEmail" class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                            <input id="contactEmail" type="email" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="contactInterest" class="block text-sm font-bold text-gray-700 mb-2">Primary Interest <span class="text-red-500">*</span></label>
+                            <select id="contactInterest" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all appearance-none">
+                                <option value="">Select Service</option>
+                                <option value="travel">Travel Package</option>
+                                <option value="wedding">Wedding Planning</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="rental">Self-Drive Car Rental</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="contactMessage" class="block text-sm font-bold text-gray-700 mb-2">Specific Requirements</label>
+                        <textarea id="contactMessage" rows="4" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="Destinations, dates, guest counts, or vehicle preferences..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 text-lg inline-flex items-center justify-center rounded-xl font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-opacity-90 shadow-xl hover:-translate-y-1 mt-4">
+                        Submit Request <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="text-white flex flex-col justify-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-10 tracking-tight">Get in Touch</h2>
+                
+                <div class="space-y-8 mb-12">
+                    <a href="tel:7365027080" class="flex items-start gap-5 group rounded-lg p-2 -ml-2 transition-all">
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-[#D4AF37] group-hover:text-white transition-colors duration-300 text-[#D4AF37]">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Direct Line 24/7</h4>
+                            <span class="text-2xl font-extrabold group-hover:text-[#D4AF37] transition-colors">+91 7365027080</span>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:redgroomofficial@gmail.com" class="flex items-start gap-5 group rounded-lg p-2 -ml-2 transition-all">
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-[#D4AF37] group-hover:text-white transition-colors duration-300 text-[#D4AF37]">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Official Email</h4>
+                            <span class="block text-lg font-bold group-hover:text-[#D4AF37] transition-colors">redgroomofficial@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <div class="flex items-start gap-5 p-2 -ml-2">
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-[#D4AF37]">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Headquarters</h4>
+                            <p class="text-lg font-medium text-gray-200 max-w-sm leading-relaxed">Neelkanth Enclave, Sector 69, Gurgaon – 122101, Haryana, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maps Embed -->
+                <div class="h-64 w-full rounded-3xl overflow-hidden bg-gray-800 relative shadow-2xl border border-white/10">
+                    <iframe src="https://maps.google.com/maps?q=Neelkanth%20Enclave,%20Sector%2069,%20Gurgaon&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Redgroom HQ Location Map" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#03070D] text-gray-400 py-16 border-t border-white/5">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <!-- Brand -->
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-[#0A192F] border border-white/10">
+                        <span class="font-serif font-bold text-white">R</span>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-white tracking-wide">REDGROOM</h3>
+                </div>
+                <p class="text-sm font-medium mb-6 leading-relaxed">
+                    Explorer – Travel Beyond Boundaries. Your premium partner for exceptional travel, unforgettable events, and reliable self-drive car rentals.
+                </p>
+                <div class="flex flex-col gap-4">
+                    <a href="tel:7365027080" class="text-sm font-bold text-white hover:text-[#D4AF37] transition-colors flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4"></i> Call Now</a>
+                    <a href="https://wa.me/917365027080" target="_blank" class="text-sm font-bold text-white hover:text-[#25D366] transition-colors flex items-center gap-3"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Chat</a>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h4 class="text-white font-extrabold mb-6 tracking-wide">Travel Services</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><button onclick="scrollToSection('travel')" class="hover:text-white transition-colors">Domestic Tours</button></li>
+                    <li><button onclick="scrollToSection('travel')" class="hover:text-white transition-colors">International Tours</button></li>
+                    <li><button onclick="scrollToSection('travel')" class="hover:text-white transition-colors">Honeymoon Packages</button></li>
+                    <li><button onclick="scrollToSection('travel')" class="hover:text-white transition-colors">Corporate Travel</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-extrabold mb-6 tracking-wide">Event Management</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><button onclick="scrollToSection('events')" class="hover:text-white transition-colors">Wedding Planning</button></li>
+                    <li><button onclick="scrollToSection('events')" class="hover:text-white transition-colors">Corporate Events</button></li>
+                    <li><button onclick="scrollToSection('events')" class="hover:text-white transition-colors">DJ Nights & Entertainment</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-extrabold mb-6 tracking-wide">Car Rentals</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><button onclick="scrollToSection('rentals')" class="hover:text-white transition-colors">Self Drive Cars Gurgaon</button></li>
+                    <li><button onclick="scrollToSection('rentals')" class="hover:text-white transition-colors">Self Drive Cars Delhi</button></li>
+                    <li><button onclick="scrollToSection('rentals')" class="hover:text-white transition-colors">Premium SUV Rentals</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-semibold">
+            <p>&copy; <span id="year"></span> Redgroom Events & Trip Planner. All Rights Reserved. | <span class="text-gray-500">GST Registered Partner</span></p>
+            <div class="flex gap-6">
+                <button class="hover:text-white">Privacy Policy</button>
+                <button class="hover:text-white">Terms of Service</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DESKTOP STICKY CTA -->
+    <div class="hidden lg:flex fixed right-0 top-1/2 -translate-y-1/2 flex-col gap-3 z-50 translate-x-[75%] hover:translate-x-0 transition-transform duration-300 ease-out">
+        <a href="tel:7365027080" class="bg-[#0A192F] text-white py-3.5 px-5 rounded-l-2xl shadow-2xl flex items-center gap-4 w-56 hover:bg-[#0f2445] transition-colors border-y border-l border-white/10">
+            <i data-lucide="phone" class="w-5 h-5 shrink-0 text-[#D4AF37]"></i>
+            <span class="font-bold text-sm tracking-wide">Call Now</span>
+        </a>
+        <a href="https://wa.me/917365027080" target="_blank" class="bg-white text-gray-900 py-3.5 px-5 rounded-l-2xl shadow-2xl flex items-center gap-4 w-56 hover:bg-gray-50 transition-colors border-y border-l border-gray-200">
+            <i data-lucide="message-circle" class="w-5 h-5 shrink-0 text-[#25D366]"></i>
+            <span class="font-bold text-sm tracking-wide">WhatsApp Us</span>
+        </a>
+    </div>
+
+    <!-- MOBILE STICKY BOTTOM BAR -->
+    <div class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.15)] z-[60] flex h-20">
+        <a href="tel:7365027080" class="flex-1 flex flex-col items-center justify-center gap-1 font-bold text-white transition-colors active:bg-[#0f2445] bg-[#0A192F]">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            <span class="text-[10px] uppercase tracking-widest">Call Now</span>
+        </a>
+        <a href="https://wa.me/917365027080" target="_blank" class="flex-1 flex flex-col items-center justify-center gap-1 font-bold text-gray-900 bg-gray-50 transition-colors active:bg-gray-200 border-l border-gray-200">
+            <i data-lucide="message-circle" class="w-5 h-5 text-[#25D366]"></i>
+            <span class="text-[10px] uppercase tracking-widest">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set Copyright Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('loader');
+                loader.style.opacity = '0';
+                setTimeout(() => loader.remove(), 500);
+            }, 1200);
+        });
+
+        // Scroll Handling (Header)
+        const header = document.getElementById('main-header');
+        const logoIcon = document.getElementById('logo-icon');
+        const logoText = document.getElementById('logo-text');
+        const logoSub = document.getElementById('logo-sub');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const headerPhone = document.getElementById('header-phone');
+        const headerBtn = document.getElementById('header-btn');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.replace('bg-transparent', 'bg-white/95');
+                header.classList.replace('py-6', 'py-3');
+                header.classList.add('backdrop-blur-md', 'shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)]');
+                
+                logoIcon.classList.replace('bg-white/10', 'bg-[#0A192F]');
+                logoIcon.classList.remove('backdrop-blur-md', 'border', 'border-white/20');
+                logoText.classList.replace('text-white', 'text-gray-900');
+                logoSub.classList.replace('text-gray-200', 'text-[#D4AF37]');
+                
+                navLinks.forEach(l => {
+                    l.classList.replace('text-white/90', 'text-gray-700');
+                    l.classList.replace('hover:text-white', 'hover:text-[#D4AF37]');
+                });
+
+                headerPhone.classList.replace('text-white', 'text-[#0A192F]');
+                headerBtn.classList.replace('bg-white', 'bg-[#0A192F]');
+                headerBtn.classList.replace('text-gray-900', 'text-white');
+                
+                mobileMenuBtn.classList.replace('text-white', 'text-gray-900');
+                mobileMenuBtn.classList.replace('bg-white/20', 'bg-gray-100');
+            } else {
+                header.classList.replace('bg-white/95', 'bg-transparent');
+                header.classList.replace('py-3', 'py-6');
+                header.classList.remove('backdrop-blur-md', 'shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)]');
+                
+                logoIcon.classList.replace('bg-[#0A192F]', 'bg-white/10');
+                logoIcon.classList.add('backdrop-blur-md', 'border', 'border-white/20');
+                logoText.classList.replace('text-gray-900', 'text-white');
+                logoSub.classList.replace('text-[#D4AF37]', 'text-gray-200');
+                
+                navLinks.forEach(l => {
+                    l.classList.replace('text-gray-700', 'text-white/90');
+                    l.classList.replace('hover:text-[#D4AF37]', 'hover:text-white');
+                });
+
+                headerPhone.classList.replace('text-[#0A192F]', 'text-white');
+                headerBtn.classList.replace('bg-[#0A192F]', 'bg-white');
+                headerBtn.classList.replace('text-white', 'text-gray-900');
+
+                mobileMenuBtn.classList.replace('text-gray-900', 'text-white');
+                mobileMenuBtn.classList.replace('bg-gray-100', 'bg-white/20');
+            }
+        });
+
+        // Mobile Menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        let isMenuOpen = false;
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.replace('max-h-0', 'max-h-[500px]');
+                mobileMenu.classList.add('border-t', 'border-gray-100');
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                closeMobileMenu();
+            }
+            lucide.createIcons();
+        });
+
+        function closeMobileMenu() {
+            isMenuOpen = false;
+            mobileMenu.classList.replace('max-h-[500px]', 'max-h-0');
+            mobileMenu.classList.remove('border-t', 'border-gray-100');
+            menuIcon.setAttribute('data-lucide', 'menu');
+            lucide.createIcons();
+        }
+
+        // Smooth Scroll
+        window.scrollToSection = function(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                const offset = 80;
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = el.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+        };
+
+        // Form Handling (Hero)
+        document.getElementById('hero-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('hero-form-box').classList.add('hidden');
+            document.getElementById('hero-success-box').classList.remove('hidden');
+            document.getElementById('hero-success-box').classList.add('flex');
+            
+            setTimeout(() => {
+                document.getElementById('hero-success-box').classList.add('hidden');
+                document.getElementById('hero-success-box').classList.remove('flex');
+                document.getElementById('hero-form-box').classList.remove('hidden');
+                e.target.reset();
+            }, 4000);
+        });
+
+        // Form Handling (Contact)
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Request sent successfully. We will contact you soon.');
+            e.target.reset();
+        });
+
+        // Gallery Filtering
+        window.filterGallery = function(category) {
+            // Update tabs
+            document.querySelectorAll('.gallery-tab').forEach(tab => {
+                if (tab.dataset.target === category) {
+                    tab.classList.replace('bg-white', 'bg-[#0A192F]');
+                    tab.classList.replace('text-gray-600', 'text-white');
+                    tab.classList.remove('border', 'border-gray-200');
+                    tab.classList.add('shadow-md');
+                } else {
+                    tab.classList.replace('bg-[#0A192F]', 'bg-white');
+                    tab.classList.replace('text-white', 'text-gray-600');
+                    tab.classList.add('border', 'border-gray-200');
+                    tab.classList.remove('shadow-md');
+                }
+            });
+
+            // Filter items
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                if (item.dataset.category === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        };
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        window.openLightbox = function(url) {
+            lightboxImg.src = url;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeLightbox = function() {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            lightboxImg.src = '';
+            document.body.style.overflow = 'auto';
+        };
+
+        // Keyboard close lightbox
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                const isOpen = content.classList.contains('max-h-[500px]');
+
+                // Close all others first (optional accordion behavior)
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    c.classList.remove('max-h-[500px]', 'opacity-100');
+                    c.classList.add('max-h-0', 'opacity-0');
+                });
+                document.querySelectorAll('.faq-icon').forEach(i => {
+                    i.setAttribute('data-lucide', 'chevron-down');
+                    i.classList.replace('text-[#FF6B35]', 'text-gray-400');
+                });
+                lucide.createIcons();
+
+                if (!isOpen) {
+                    content.classList.remove('max-h-0', 'opacity-0');
+                    content.classList.add('max-h-[500px]', 'opacity-100');
+                    icon.setAttribute('data-lucide', 'chevron-up');
+                    icon.classList.replace('text-gray-400', 'text-[#FF6B35]');
+                    lucide.createIcons();
+                }
+            });
+        });
+
+        // Initialize first FAQ as open
+        document.querySelector('.faq-button').click();
+
+        // Simulate Google Reviews API
+        setTimeout(() => {
+            document.getElementById('google-reviews-loading').classList.add('hidden');
+            document.getElementById('google-reviews-loading').classList.remove('flex');
+            document.getElementById('google-reviews-empty').classList.remove('hidden');
+            document.getElementById('google-reviews-empty').classList.add('flex');
+        }, 2500);
+
+    </script>
+</body>
+</html>
+
+```
