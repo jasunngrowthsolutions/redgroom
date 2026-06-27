@@ -1360,7 +1360,8 @@
 
             function tryNextExtension() {
                 if (currentExtIndex < extensions.length) {
-                    img.src = '/assets/' + baseName + extensions[currentExtIndex];
+                    // Changed from '/assets/' to './' to match your GitHub root folder
+                    img.src = './' + baseName + extensions[currentExtIndex];
                     currentExtIndex++;
                 } else {
                     // Final Fallback: UI Avatars Premium styling
