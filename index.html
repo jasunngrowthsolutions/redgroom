@@ -209,11 +209,11 @@
 
   <!-- HEADER -->
   <header id="main-header" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-5 xl:gap-8">
         
         <!-- Logo -->
-        <a href="#home" class="scroll-link flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg shrink-0">
-            <div id="logo-icon" class="w-11 h-11 rounded-lg flex items-center justify-center transition-all duration-500 shadow-md bg-white/10 backdrop-blur-md border border-white/20 group-hover:border-[#D4AF37]/50 shrink-0">
+        <a href="#home" class="scroll-link flex items-center gap-3 shrink-0 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg">
+            <div id="logo-icon" class="w-11 h-11 rounded-lg flex items-center justify-center transition-all duration-500 shadow-md bg-white/10 backdrop-blur-md border border-white/20 group-hover:border-[#D4AF37]/50">
                 <span class="font-serif text-2xl font-bold text-white">R</span>
             </div>
             <div class="flex flex-col">
@@ -227,7 +227,7 @@
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex items-center gap-5 xl:gap-8 bg-white/5 backdrop-blur-md rounded-full px-6 xl:px-8 py-2.5 border border-white/10 shadow-sm" aria-label="Main Navigation">
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 bg-white/5 backdrop-blur-md rounded-full px-6 xl:px-8 py-3 border border-white/10 shadow-sm" aria-label="Main Navigation">
             <a href="#services" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Services</a>
             <a href="#why-us" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Why Us</a>
             <a href="#founders" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Founders</a>
@@ -237,7 +237,7 @@
 
         <div class="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0">
             <a id="header-phone" href="tel:+917365027080" class="flex items-center gap-2 font-bold text-sm tracking-wide transition-colors text-white hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md whitespace-nowrap">
-                <i data-lucide="phone" class="w-4 h-4 shrink-0"></i> +91 73650 27080
+                <i data-lucide="phone" class="w-4 h-4"></i> +91 73650 27080
             </a>
             <a href="#contact" id="header-btn" class="scroll-link inline-flex items-center justify-center px-6 xl:px-7 py-2.5 rounded-full font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-2 active:scale-95 text-sm bg-white text-[#0A192F] hover:bg-[#D4AF37] hover:text-white shadow-lg hover:shadow-xl whitespace-nowrap">
                 Get a Quote
@@ -245,7 +245,7 @@
         </div>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] text-white bg-white/20 transition-colors" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] text-white bg-white/20 transition-colors shrink-0" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
             <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
         </button>
     </div>
@@ -330,18 +330,18 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="col-span-2 sm:col-span-1">
                             <label for="heroName" class="sr-only">Full Name</label>
-                            <input id="heroName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400" placeholder="Full Name">
+                            <input id="heroName" type="text" required class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400" placeholder="Full Name">
                         </div>
                         <div class="col-span-2 sm:col-span-1">
                             <label for="heroPhone" class="sr-only">Phone Number</label>
-                            <input id="heroPhone" type="tel" pattern="[0-9]{10,15}" title="Please enter a valid phone number" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400" placeholder="Phone Number">
+                            <input id="heroPhone" type="tel" pattern="[0-9]{10,15}" title="Please enter a valid phone number" required class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400" placeholder="Phone Number">
                         </div>
                     </div>
 
                     <div>
                         <label for="heroService" class="sr-only">Service Required</label>
                         <div class="relative">
-                            <select id="heroService" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 appearance-none text-sm font-medium">
+                            <select id="heroService" required class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 appearance-none text-sm font-medium">
                                 <option value="" disabled selected>Select Primary Service</option>
                                 <option value="travel">Luxury Travel Planning</option>
                                 <option value="wedding">Destination Wedding</option>
@@ -355,17 +355,18 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="col-span-2 sm:col-span-1">
                             <label for="heroDate" class="sr-only">Preferred Date</label>
-                            <input id="heroDate" type="date" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium text-gray-500">
+                            <!-- Text-to-Date Hack: Prevents iOS from applying rigid block width and centering, ensuring perfect layout alignment -->
+                            <input id="heroDate" type="text" placeholder="Preferred Date" onfocus="(this.type='date')" onblur="(this.type=(this.value==''?'text':'date'))" class="block box-border min-w-0 w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400 appearance-none m-0">
                         </div>
                         <div class="col-span-2 sm:col-span-1">
                             <label for="heroContactPref" class="sr-only">Contact Method</label>
                             <div class="relative">
-                                <select id="heroContactPref" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 appearance-none text-sm font-medium">
+                                <select id="heroContactPref" class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 appearance-none text-sm font-medium">
                                     <option value="phone">Call Me</option>
                                     <option value="whatsapp">WhatsApp</option>
                                     <option value="email">Email</option>
                                 </select>
-                                <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"></i>
+                                <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"></i>
                             </div>
                         </div>
                     </div>
@@ -919,31 +920,31 @@
               <form id="contact-form" class="space-y-4">
                   <div>
                       <label for="contactName" class="sr-only">Full Name</label>
-                      <input id="contactName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium" placeholder="Full Name">
+                      <input id="contactName" type="text" required class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium" placeholder="Full Name">
                   </div>
                   
                   <div>
                       <label for="contactPhone" class="sr-only">Phone Number</label>
-                      <input id="contactPhone" type="tel" pattern="[0-9]{10,15}" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium" placeholder="Phone Number">
+                      <input id="contactPhone" type="tel" pattern="[0-9]{10,15}" required class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium" placeholder="Phone Number">
                   </div>
                   
                   <div>
                       <label for="contactInterest" class="sr-only">Primary Interest</label>
                       <div class="relative">
-                          <select id="contactInterest" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all appearance-none text-sm font-medium text-gray-500">
+                          <select id="contactInterest" required class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all appearance-none text-sm font-medium text-gray-500">
                               <option value="" disabled selected>Select Service</option>
                               <option value="travel">Travel Package</option>
                               <option value="wedding">Wedding Planning</option>
                               <option value="corporate">Corporate Event</option>
                               <option value="rental">Self-Drive Car Rental</option>
                           </select>
-                          <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"></i>
+                          <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"></i>
                       </div>
                   </div>
 
                   <div>
                       <label for="contactMessage" class="sr-only">Message</label>
-                      <textarea id="contactMessage" rows="4" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium resize-none" placeholder="Share a few details about your requirement..."></textarea>
+                      <textarea id="contactMessage" rows="4" class="block box-border w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium resize-none" placeholder="Share a few details about your requirement..."></textarea>
                   </div>
 
                   <button type="submit" id="main-contact-submit" class="w-full py-4 text-base flex items-center justify-center rounded-xl font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-[#D4AF37] shadow-xl hover:-translate-y-0.5 mt-2 group">
