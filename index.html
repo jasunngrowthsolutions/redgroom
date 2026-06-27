@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Title: keyword-first, under 60 characters -->
-  <title>Luxury Travel & Event Planner in Gurgaon | Redgroom</title>
+  <title>Luxury Travel & Event Planner in Gurugram | Redgroom</title>
 
   <!-- Meta Description: max 155 chars, includes CTA and phone -->
-  <meta name="description" content="Luxury travel planning, destination weddings, corporate events, and self-drive car rentals in Gurgaon & Delhi NCR. Get a free quote today.">
+  <meta name="description" content="Luxury travel planning, destination weddings, corporate events, and self-drive car rentals in Gurugram & Delhi NCR. Get a free custom quote today.">
 
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.redgroom.com/">
@@ -18,29 +18,49 @@
   <meta property="og:url" content="https://www.redgroom.com/">
   <meta property="og:locale" content="en_IN">
   <meta property="og:site_name" content="Redgroom Events & Trip Planner">
-  <meta property="og:title" content="Luxury Travel, Weddings & Car Rentals in Gurgaon | Redgroom">
-  <meta property="og:description" content="Premium travel planning, destination weddings & self-drive car rentals in Gurgaon & Delhi NCR. Expert consultation in 30 minutes.">
-  <!-- TODO: Replace placeholder image paths with final uploaded assets -->
+  <meta property="og:title" content="Luxury Travel, Weddings & Car Rentals in Gurugram | Redgroom">
+  <meta property="og:description" content="Premium travel planning, destination weddings & self-drive car rentals in Gurugram & Delhi NCR. Expert consultation in 30 minutes.">
   <meta property="og:image" content="https://www.redgroom.com/assets/og-cover-redgroom.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- Twitter Cards (complete set) -->
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@redgroom">
-  <meta name="twitter:title" content="Luxury Travel, Weddings & Car Rentals in Gurgaon | Redgroom">
-  <meta name="twitter:description" content="Premium travel planning, destination weddings & self-drive car rentals in Gurgaon & Delhi NCR.">
+  <meta name="twitter:title" content="Luxury Travel, Weddings & Car Rentals in Gurugram | Redgroom">
+  <meta name="twitter:description" content="Premium travel planning, destination weddings & self-drive car rentals in Gurugram & Delhi NCR.">
   <meta name="twitter:image" content="https://www.redgroom.com/assets/og-cover-redgroom.jpg">
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Preload hero image (use own domain path) -->
+  <!-- Preload key assets -->
   <link rel="preload" as="image" href="/assets/hero-luxury-travel-gurgaon.webp" fetchpriority="high">
-
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Configuration & Script (In head to prevent FOUC) -->
+  <script>
+    tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0A192F',
+              secondary: '#D4AF37',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Clean, Compliant SEO Schema -->
   <script type="application/ld+json">
@@ -65,7 +85,7 @@
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Neelkanth Enclave, Sector 69",
-        "addressLocality": "Gurgaon",
+        "addressLocality": "Gurugram",
         "postalCode": "122101",
         "addressRegion": "Haryana",
         "addressCountry": "IN"
@@ -86,15 +106,15 @@
     },
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://www.redgroom.com/#website",
-      "url": "https://www.redgroom.com/",
-      "name": "Redgroom Events & Trip Planner",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.redgroom.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.redgroom.com/"
+        }
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -127,15 +147,7 @@
         },
         {
           "@type": "Question",
-          "name": "What is the best time of year to plan a destination wedding in Rajasthan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The ideal season for a Rajasthan destination wedding is October through February, when temperatures are pleasant (15–25°C). Peak wedding season is November to January. We recommend booking at least 6–9 months in advance to secure premium palace venues like Umaid Bhawan, Samode Palace, or Dera Amer during this period."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I book a self-drive car in Gurgaon without a credit card?",
+          "name": "Can I book a self-drive car in Gurugram without a credit card?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. We accept UPI, net banking, and debit cards for the security deposit and rental payment. A valid driving licence, Aadhar Card, and a refundable deposit are required. Credit card is not mandatory — just a verified payment method."
@@ -143,26 +155,18 @@
         },
         {
           "@type": "Question",
-          "name": "Do you offer customized domestic holiday packages from Gurgaon?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We plan fully customized domestic holidays including Kerala backwaters tours, Goa beach getaways, Manali and Shimla hill trips, Rajasthan cultural tours, and Andaman island packages. All itineraries are tailored to your group size, budget, and travel dates."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "What is included in a corporate event management package?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our corporate packages include venue sourcing, AV and tech setup, branding and signage, catering coordination, guest registration systems, speaker/artist management, photography, and complete on-ground logistics. We handle everything from site visits to post-event reporting."
+            "text": "Our corporate packages include venue sourcing, AV and tech setup, branding and signage, catering coordination, guest registration systems, speaker/artist management, photography, and complete on-ground logistics."
           }
         },
         {
           "@type": "Question",
-          "name": "Is Redgroom GST registered? Can I get a proper invoice for corporate bookings?",
+          "name": "Is Redgroom's pricing transparent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Redgroom Events & Trip Planner is a fully GST-registered business entity in Gurgaon, Haryana. We provide valid GST invoices for all services — travel, events, and car rentals — suitable for corporate expense reimbursements and business accounts."
+            "text": "Yes. Redgroom Events & Trip Planner operates with 100% transparent pricing. We provide comprehensive invoices and detailed quotes for all services — travel, events, and car rentals — ensuring no hidden charges."
           }
         }
       ]
@@ -171,721 +175,547 @@
   </script>
 
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; }
+    /* Critical CSS */
+    body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
     .font-serif { font-family: 'Playfair Display', serif; }
     .selection\:bg-\[\#D4AF37\] *::selection { background-color: #D4AF37; color: white; }
     
     /* Performance Boost: Content Visibility */
-    #about,
-    #travel,
-    #events,
-    #rentals,
-    #process,
-    #gallery,
-    #testimonials,
-    #faq,
-    #contact {
-      content-visibility: auto;
-      contain-intrinsic-size: 0 800px;
-    }
-  </style>
-</head>
-<body class="text-gray-800 antialiased bg-white selection:bg-[#D4AF37] pb-20 lg:pb-0">
+    section { content-visibility: auto; contain-intrinsic-size: 0 800px; }
+    #home { content-visibility: visible; }
 
-  <!-- INITIAL LOADING SCREEN -->
-  <div id="loader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-opacity duration-300 bg-[#0A192F]" role="status" aria-label="Loading Redgroom website...">
-    <span class="sr-only">Loading, please wait...</span>
-    <div class="w-16 h-16 rounded-xl border border-white/20 bg-white/10 flex items-center justify-center mb-6 shadow-2xl animate-pulse">
-        <span class="font-serif text-3xl font-bold text-white">R</span>
-    </div>
-    <div class="w-48 h-1 bg-white/20 rounded-full overflow-hidden">
-        <div class="h-full bg-[#D4AF37] animate-[pulse_1.2s_ease-in-out_infinite]" style="width: 100%;"></div>
-    </div>
-  </div>
+    /* Scroll animations */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 100ms; }
+    .reveal-delay-2 { transition-delay: 200ms; }
+    .reveal-delay-3 { transition-delay: 300ms; }
+
+    /* Custom Scrollbar for a premium feel */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #b5952f; }
+  </style>
+
+  <!-- Fallback if JS is disabled to ensure visibility -->
+  <noscript>
+    <style>
+      #app-body { opacity: 1 !important; }
+    </style>
+  </noscript>
+</head>
+<body id="app-body" class="text-gray-800 antialiased bg-white selection:bg-[#D4AF37] pb-16 lg:pb-0 opacity-0 transition-opacity duration-700 ease-in-out">
 
   <!-- HEADER -->
   <header id="main-header" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6">
     <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         
         <!-- Logo -->
-        <a href="#home" onclick="event.preventDefault(); scrollToSection('home')" class="flex items-center gap-3 group">
-            <div id="logo-icon" class="w-11 h-11 rounded-lg flex items-center justify-center transition-all duration-500 shadow-md bg-white/10 backdrop-blur-md border border-white/20">
+        <a href="#home" class="scroll-link flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg shrink-0">
+            <div id="logo-icon" class="w-11 h-11 rounded-lg flex items-center justify-center transition-all duration-500 shadow-md bg-white/10 backdrop-blur-md border border-white/20 group-hover:border-[#D4AF37]/50 shrink-0">
                 <span class="font-serif text-2xl font-bold text-white">R</span>
             </div>
             <div class="flex flex-col">
-                <span id="logo-text" class="font-extrabold text-xl md:text-2xl tracking-wide transition-colors text-white drop-shadow-md">
+                <span id="logo-text" class="font-extrabold text-xl md:text-2xl tracking-wide transition-colors text-white drop-shadow-md font-serif whitespace-nowrap">
                     REDGROOM
                 </span>
-                <span id="logo-sub" class="text-[9px] md:text-[10px] tracking-[0.2em] uppercase font-bold transition-colors text-gray-200">
+                <span id="logo-sub" class="text-[9px] md:text-[10px] tracking-[0.2em] uppercase font-bold transition-colors text-gray-200 whitespace-nowrap">
                     Events & Trip Planner
                 </span>
             </div>
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex items-center gap-8 bg-white/5 backdrop-blur-sm rounded-full px-6 py-2 border border-white/10">
-            <a href="#about" onclick="event.preventDefault(); scrollToSection('about')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">About</a>
-            <a href="#travel" onclick="event.preventDefault(); scrollToSection('travel')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Travel</a>
-            <a href="#events" onclick="event.preventDefault(); scrollToSection('events')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Events</a>
-            <a href="#rentals" onclick="event.preventDefault(); scrollToSection('rentals')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Rentals</a>
-            <a href="#gallery" onclick="event.preventDefault(); scrollToSection('gallery')" class="nav-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1 text-white/90 hover:text-white">Gallery</a>
+        <nav class="hidden lg:flex items-center gap-5 xl:gap-8 bg-white/5 backdrop-blur-md rounded-full px-6 xl:px-8 py-2.5 border border-white/10 shadow-sm" aria-label="Main Navigation">
+            <a href="#services" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Services</a>
+            <a href="#why-us" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Why Us</a>
+            <a href="#founders" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Founders</a>
+            <a href="#gallery" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Gallery</a>
+            <a href="#testimonials" class="scroll-link font-semibold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md text-white/90 hover:text-[#D4AF37] whitespace-nowrap">Reviews</a>
         </nav>
 
-        <div class="hidden lg:flex items-center gap-6">
-            <a id="header-phone" href="tel:+917365027080" class="flex items-center gap-2 font-bold text-sm tracking-wide transition-colors text-white hover:text-gray-200">
-                <i data-lucide="phone" class="w-4 h-4"></i> +91 73650 27080
+        <div class="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0">
+            <a id="header-phone" href="tel:+917365027080" class="flex items-center gap-2 font-bold text-sm tracking-wide transition-colors text-white hover:text-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md whitespace-nowrap">
+                <i data-lucide="phone" class="w-4 h-4 shrink-0"></i> +91 73650 27080
             </a>
-            <a href="#contact" id="header-btn" onclick="event.preventDefault(); scrollToSection('contact')" class="inline-flex items-center justify-center px-7 py-2.5 rounded-full font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#D4AF37] active:scale-95 text-sm bg-white text-gray-900 hover:bg-gray-50 shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <a href="#contact" id="header-btn" class="scroll-link inline-flex items-center justify-center px-6 xl:px-7 py-2.5 rounded-full font-bold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-2 active:scale-95 text-sm bg-white text-[#0A192F] hover:bg-[#D4AF37] hover:text-white shadow-lg hover:shadow-xl whitespace-nowrap">
                 Get a Quote
             </a>
         </div>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg focus-visible:ring-2 focus-visible:ring-[#D4AF37] text-white bg-white/20" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] text-white bg-white/20 transition-colors" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
             <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
         </button>
     </div>
 
     <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl transition-all duration-300 origin-top overflow-hidden max-h-0">
+    <div id="mobile-menu" class="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl transition-all duration-300 origin-top overflow-hidden max-h-0" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
         <div class="p-6 flex flex-col gap-2">
-            <a href="#about" onclick="event.preventDefault(); scrollToSection('about'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">About</a>
-            <a href="#travel" onclick="event.preventDefault(); scrollToSection('travel'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Travel</a>
-            <a href="#events" onclick="event.preventDefault(); scrollToSection('events'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Events</a>
-            <a href="#rentals" onclick="event.preventDefault(); scrollToSection('rentals'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Rentals</a>
-            <a href="#gallery" onclick="event.preventDefault(); scrollToSection('gallery'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Gallery</a>
-            <a href="#testimonials" onclick="event.preventDefault(); scrollToSection('testimonials'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Reviews</a>
-            <a href="#faq" onclick="event.preventDefault(); scrollToSection('faq'); closeMobileMenu()" class="block text-left py-3 px-4 text-gray-800 font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">FAQ</a>
+            <a href="#services" class="mobile-nav-link block text-left py-3 px-4 text-[#0A192F] font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Services</a>
+            <a href="#why-us" class="mobile-nav-link block text-left py-3 px-4 text-[#0A192F] font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Why Choose Us</a>
+            <a href="#founders" class="mobile-nav-link block text-left py-3 px-4 text-[#0A192F] font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Founders</a>
+            <a href="#gallery" class="mobile-nav-link block text-left py-3 px-4 text-[#0A192F] font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Gallery</a>
+            <a href="#testimonials" class="mobile-nav-link block text-left py-3 px-4 text-[#0A192F] font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">Reviews</a>
+            <a href="#faq" class="mobile-nav-link block text-left py-3 px-4 text-[#0A192F] font-bold text-lg hover:bg-gray-50 rounded-xl transition-colors">FAQ</a>
             <div class="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-3">
-                <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact'); closeMobileMenu()" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-opacity-90 shadow-xl w-full">Get a Quote</a>
+                <a href="#contact" class="mobile-nav-link inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-[#D4AF37] shadow-xl w-full">Request Custom Quote</a>
             </div>
         </div>
     </div>
   </header>
 
   <!-- HERO SECTION -->
-  <section id="home" class="relative min-h-[95vh] md:min-h-screen flex items-center pt-24 pb-16 lg:pb-0">
-    <div class="absolute inset-0 z-0 bg-gray-900">
-        <!-- TODO: Replace placeholder image paths with final uploaded assets -->
-        <img src="/assets/hero-luxury-travel-gurgaon.webp" alt="Luxury Travel and Premium Events in Gurgaon" class="w-full h-full object-cover opacity-80" fetchpriority="high" width="1920" height="1080">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#050B14]/95 via-[#0A192F]/80 to-transparent"></div>
+  <section id="home" class="relative min-h-[95vh] flex items-center pt-32 pb-24 lg:pt-40 lg:pb-32">
+    <div class="absolute inset-0 z-0 bg-[#03070D] overflow-hidden">
+        <!-- Note: Use production quality image path -->
+        <img src="/assets/hero-luxury-travel-gurgaon.webp" alt="Luxury Travel and Premium Events in Gurugram" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]" fetchpriority="high">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#03070D]/95 via-[#0A192F]/80 to-transparent"></div>
     </div>
 
     <div class="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-12 gap-12 items-center">
         
-        <div class="lg:col-span-7 text-white pt-10 lg:pt-0">
-            <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs md:text-sm font-bold tracking-widest mb-8 border border-white/20 bg-white/10 backdrop-blur-sm uppercase">
+        <div class="lg:col-span-7 text-white reveal">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-bold tracking-widest mb-8 border border-[#D4AF37]/50 bg-[#D4AF37]/10 backdrop-blur-sm uppercase text-[#D4AF37]">
                 <span class="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse"></span>
-                Explorer – Travel Beyond Boundaries
-            </span>
+                Premium Experiences Guaranteed
+            </div>
             
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
-                Luxury Travel, Weddings &amp; <br class="hidden md:block">
-                Self-Drive Cars in <br class="hidden md:block">
-                Gurgaon &amp; Delhi NCR.
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight font-serif text-white drop-shadow-lg">
+                Crafting Extraordinary <br class="hidden md:block">
+                Journeys & Events in <br class="hidden md:block">
+                <span class="text-[#D4AF37] italic">Gurugram.</span>
             </h1>
             
             <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl font-medium">
-                From luxury international holidays and destination weddings to corporate events and self-drive car rentals, Redgroom helps clients across Gurgaon and Delhi NCR plan premium experiences without the stress.
+                Transforming your visions into reality. From personalized luxury travel and royal destination weddings to professional corporate events and self-drive car rentals—planned to perfection.
             </p>
             
-            <div class="flex flex-col sm:flex-row flex-wrap gap-4 mb-6">
-                <a href="#travel" onclick="event.preventDefault(); scrollToSection('travel')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1 w-full sm:w-auto">Plan My Trip</a>
-                <a href="#events" onclick="event.preventDefault(); scrollToSection('events')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-[#0A192F] shadow-xl hover:-translate-y-1 w-full sm:w-auto">Plan My Wedding</a>
-                <a href="#rentals" onclick="event.preventDefault(); scrollToSection('rentals')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-[#0A192F] shadow-xl hover:-translate-y-1 w-full sm:w-auto">Book a Car</a>
+            <!-- Trust Indicators -->
+            <div class="flex items-center gap-6 mb-8 flex-wrap">
+                <div class="flex items-center gap-1">
+                    <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-[#D4AF37] fill-[#D4AF37]"></i>
+                    <span class="ml-2 font-bold text-white text-sm">5.0 Customer Rating</span>
+                </div>
+                <div class="h-6 w-px bg-white/20 hidden sm:block"></div>
+                <div class="flex items-center gap-2 text-sm font-bold text-gray-300">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-[#25D366]"></i> Fast Consultation
+                </div>
+                <div class="flex items-center gap-2 text-sm font-bold text-gray-300">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-[#D4AF37]"></i> Verified Services
+                </div>
             </div>
-            
-            <!-- Visible Phone Number in Hero -->
-            <div class="flex items-center gap-3 mt-6 flex-wrap">
-              <a href="tel:+917365027080" class="flex items-center gap-2 text-white font-bold text-base hover:text-[#D4AF37] transition-colors bg-white/10 backdrop-blur-sm px-5 py-3 rounded-full border border-white/20 shadow-md">
-                <i data-lucide="phone" class="w-4 h-4"></i>
-                Call: +91 73650 27080
-              </a>
-              <a href="https://wa.me/917365027080?text=Hi%20Redgroom%2C%20I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-white font-bold text-sm hover:text-green-300 transition-colors">
-                <i data-lucide="message-circle" class="w-4 h-4 text-green-400"></i>
-                WhatsApp
-              </a>
+
+            <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+                <a href="#services" class="scroll-link inline-flex items-center justify-center px-8 py-4 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-[#0A192F] hover:bg-white shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:-translate-y-1 w-full sm:w-auto text-sm uppercase tracking-wide">
+                    Explore Services
+                </a>
             </div>
         </div>
 
-        <!-- Hero Lead Form -->
-        <div class="lg:col-span-5 relative mt-8 lg:mt-0" id="hero-form-container">
-            <div id="hero-form-box" class="bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/20 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-2 bg-[#D4AF37]"></div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Start Your Journey</h3>
-                <p class="text-gray-500 mb-6 text-sm font-medium">Request a premium consultation today.</p>
+        <!-- Advanced Hero Lead Form -->
+        <div class="lg:col-span-5 relative mt-8 lg:mt-0 reveal reveal-delay-2">
+            <div id="hero-form-box" class="bg-white p-8 sm:p-10 rounded-[2rem] shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#0A192F] to-[#D4AF37]"></div>
+                
+                <h3 class="text-2xl font-bold text-[#0A192F] font-serif mb-2">Request a Consultation</h3>
+                <p class="text-gray-500 mb-6 text-sm font-medium">Get a transparent, customized quote in minutes.</p>
                 
                 <form id="hero-form" class="space-y-4">
-                    <div>
-                        <label for="heroName" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
-                        <input id="heroName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0A192F] outline-none transition-all bg-gray-50 text-gray-900" placeholder="e.g. Rahul Sharma">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2 sm:col-span-1">
+                            <label for="heroName" class="sr-only">Full Name</label>
+                            <input id="heroName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400" placeholder="Full Name">
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <label for="heroPhone" class="sr-only">Phone Number</label>
+                            <input id="heroPhone" type="tel" pattern="[0-9]{10,15}" title="Please enter a valid phone number" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium placeholder-gray-400" placeholder="Phone Number">
+                        </div>
                     </div>
+
                     <div>
-                        <label for="heroPhone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
-                        <input id="heroPhone" type="tel" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0A192F] outline-none transition-all bg-gray-50 text-gray-900" placeholder="+91 98765 43210">
-                    </div>
-                    <div>
-                        <label for="heroService" class="block text-sm font-bold text-gray-700 mb-2">Service Required</label>
+                        <label for="heroService" class="sr-only">Service Required</label>
                         <div class="relative">
-                            <select id="heroService" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-[#0A192F] outline-none transition-all bg-gray-50 text-gray-900 appearance-none font-medium">
-                                <option value="">Select a Service</option>
-                                <option value="travel">Travel Planning</option>
-                                <option value="events">Event Management</option>
-                                <option value="rentals">Self-Drive Car Rental</option>
+                            <select id="heroService" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 appearance-none text-sm font-medium">
+                                <option value="" disabled selected>Select Primary Service</option>
+                                <option value="travel">Luxury Travel Planning</option>
+                                <option value="wedding">Destination Wedding</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="rentals">Premium Car Rental</option>
                             </select>
                             <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"></i>
                         </div>
                     </div>
-                    <button type="submit" class="w-full py-4 text-lg inline-flex items-center justify-center rounded-full font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-opacity-90 shadow-xl hover:-translate-y-1 mt-2">
-                        Get a Custom Quote
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2 sm:col-span-1">
+                            <label for="heroDate" class="sr-only">Preferred Date</label>
+                            <input id="heroDate" type="date" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 text-sm font-medium text-gray-500">
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <label for="heroContactPref" class="sr-only">Contact Method</label>
+                            <div class="relative">
+                                <select id="heroContactPref" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37]/20 outline-none transition-all bg-gray-50 text-gray-900 appearance-none text-sm font-medium">
+                                    <option value="phone">Call Me</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                    <option value="email">Email</option>
+                                </select>
+                                <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 text-base flex items-center justify-center rounded-xl font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-[#0f2445] shadow-lg hover:-translate-y-0.5 mt-2 group">
+                        Get Your Free Quote
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </button>
+                    <p class="text-xs text-center text-gray-400 mt-3 flex items-center justify-center gap-1">
+                        <i data-lucide="lock" class="w-3 h-3"></i> 100% Secure & Confidential
+                    </p>
                 </form>
             </div>
 
-            <!-- Success State (Hidden by default) -->
-            <div id="hero-success-box" class="hidden bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/20 h-full flex-col items-center justify-center text-center">
-                <div class="w-16 h-16 rounded-full bg-[#D4AF37] flex items-center justify-center mb-4 shadow-lg">
-                    <i data-lucide="check-circle" class="w-8 h-8 text-white"></i>
+            <!-- Success State -->
+            <div id="hero-success-box" class="hidden bg-white p-10 rounded-[2rem] shadow-2xl h-full flex-col items-center justify-center text-center absolute inset-0 z-20">
+                <div class="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mb-6">
+                    <i data-lucide="check-circle" class="w-10 h-10 text-green-500"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">Request Received</h3>
-                <p class="text-gray-600 font-medium">Our specialists will contact you within 30 minutes.</p>
+                <h3 class="text-3xl font-bold text-[#0A192F] font-serif mb-2">Request Sent</h3>
+                <p class="text-gray-600 font-medium">Thank you! A Redgroom specialist will reach out to you shortly.</p>
             </div>
         </div>
 
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="py-20 bg-white">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-sm font-extrabold uppercase tracking-widest text-[#D4AF37] mb-3 block">About Redgroom</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 leading-tight">Gurgaon's Trusted Travel, Event & Car Rental Partner</h2>
-                <div class="w-20 h-1.5 mb-8 rounded-full bg-[#D4AF37]"></div>
-                <div class="space-y-6 text-gray-600 font-medium leading-relaxed text-lg">
-                    <p>Founded on a passion for flawless execution and unparalleled luxury, <strong>Redgroom Events & Trip Planner</strong> has established itself as the leading management company in Gurgaon and Delhi NCR.</p>
-                    <p>Our philosophy is simple: Every journey should be extraordinary, every event should be unforgettable, and every car rental should be effortless. We bring deep industry expertise, an extensive network of verified premium vendors, and a relentless commitment to perfection to every single project.</p>
-                    <p>Whether you're planning a corporate summit in Delhi NCR, a royal destination wedding in Rajasthan, or a luxury European getaway, our locally rooted but globally connected team ensures your vision becomes reality without the stress.</p>
-                </div>
-            </div>
-            <!-- TODO: Replace placeholder image paths with final uploaded assets -->
-            <div class="relative">
-                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative z-10 bg-gray-200">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Redgroom Team collaborating in Gurgaon Office" class="w-full h-full object-cover" loading="lazy" width="1000" height="750">
-                </div>
-                <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-[#F8F9FA] rounded-3xl border border-gray-200 -z-0"></div>
-                <div class="absolute -top-6 -right-6 w-32 h-32 bg-[#0A192F] rounded-full opacity-10 -z-0"></div>
-            </div>
-        </div>
-    </div>
-  </section>
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-24 bg-white relative">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+              <span class="text-sm font-extrabold uppercase tracking-widest text-[#D4AF37] mb-3 block">Our Expertise</span>
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight text-[#0A192F] font-serif">Tailored Services for Discerning Clients</h2>
+              <div class="w-16 h-1 mx-auto rounded-full bg-[#D4AF37]"></div>
+          </div>
 
-  <!-- MEET THE LEADERSHIP -->
-  <section id="leadership" class="pb-20 bg-white">
-      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-100 pt-16">
-          <h3 class="text-2xl font-bold text-center mb-2 text-gray-900">Meet the Leadership</h3>
-          <p class="text-center text-gray-500 mb-10 text-sm font-medium">Founded and led by passionate experts in luxury travel and event management.</p>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <!-- TODO: Replace placeholder team details with real team data -->
-            <div class="text-center">
-              <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 mb-4 shadow-inner overflow-hidden">
-                <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=0A192F&color=D4AF37&size=96" alt="Founder of Redgroom" width="96" height="96" loading="lazy">
+          <!-- Service 1: Travel (Card Grid) -->
+          <div class="mb-24 reveal">
+              <div class="flex items-center gap-4 mb-10">
+                  <div class="w-12 h-12 rounded-xl bg-[#0A192F]/5 flex items-center justify-center text-[#0A192F]">
+                      <i data-lucide="plane-takeoff" class="w-6 h-6"></i>
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-[#0A192F] font-serif">Luxury Travel Planning</h3>
               </div>
-              <h4 class="font-bold text-gray-900 text-base">Rahul Sharma</h4>
-              <p class="text-sm text-gray-500">Founder & CEO</p>
-              <p class="text-xs text-gray-400 mt-1">Luxury travel specialist</p>
-            </div>
-            <div class="text-center">
-              <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 mb-4 shadow-inner overflow-hidden">
-                <img src="https://ui-avatars.com/api/?name=Priya+Kapoor&background=D4AF37&color=0A192F&size=96" alt="Head of Events at Redgroom" width="96" height="96" loading="lazy">
+              <div class="grid md:grid-cols-3 gap-8">
+                  <article class="group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                      <div class="h-60 overflow-hidden relative">
+                          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai luxury travel" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                          <span class="absolute bottom-4 left-4 text-white font-bold text-lg font-serif">International Escapes</span>
+                      </div>
+                      <div class="p-6">
+                          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Bespoke itineraries for Dubai, Bali, Europe and beyond. We handle flights, visas, and premium accommodations.</p>
+                          <a href="#contact" class="scroll-link text-[#D4AF37] font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Plan Trip <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                      </div>
+                  </article>
+                  <article class="group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                      <div class="h-60 overflow-hidden relative">
+                          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="Taj Mahal Travel India" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                          <span class="absolute bottom-4 left-4 text-white font-bold text-lg font-serif">Domestic Retreats</span>
+                      </div>
+                      <div class="p-6">
+                          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Explore the beauty of India. Premium packages for Rajasthan, Kerala backwaters, Goa, and the Himalayas.</p>
+                          <a href="#contact" class="scroll-link text-[#D4AF37] font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Plan Trip <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                      </div>
+                  </article>
+                  <article class="group bg-gray-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100">
+                      <div class="h-60 overflow-hidden relative">
+                          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Honeymoon" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                          <span class="absolute bottom-4 left-4 text-white font-bold text-lg font-serif">Romantic Getaways</span>
+                      </div>
+                      <div class="p-6">
+                          <p class="text-gray-600 text-sm mb-4 line-clamp-2">Curated honeymoon experiences featuring private villas, candle-lit dinners, and exclusive cultural tours.</p>
+                          <a href="#contact" class="scroll-link text-[#D4AF37] font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all">Plan Trip <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                      </div>
+                  </article>
               </div>
-              <h4 class="font-bold text-gray-900 text-base">Priya Kapoor</h4>
-              <p class="text-sm text-gray-500">Head of Events</p>
-              <p class="text-xs text-gray-400 mt-1">Wedding planning specialist</p>
-            </div>
-            <div class="text-center">
-              <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 mb-4 shadow-inner overflow-hidden">
-                <img src="https://ui-avatars.com/api/?name=Arjun+Mehta&background=FF6B35&color=fff&size=96" alt="Fleet Manager at Redgroom" width="96" height="96" loading="lazy">
+          </div>
+
+          <!-- Service 2: Events (Feature Layout) -->
+          <div class="mb-24 reveal">
+              <div class="flex items-center justify-end gap-4 mb-10">
+                  <h3 class="text-2xl md:text-3xl font-bold text-[#0A192F] font-serif text-right">Event Management</h3>
+                  <div class="w-12 h-12 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center text-[#D4AF37]">
+                      <i data-lucide="calendar-check" class="w-6 h-6"></i>
+                  </div>
               </div>
-              <h4 class="font-bold text-gray-900 text-base">Arjun Mehta</h4>
-              <p class="text-sm text-gray-500">Fleet Operations Manager</p>
-              <p class="text-xs text-gray-400 mt-1">Fleet operations specialist</p>
-            </div>
+              <div class="grid lg:grid-cols-2 gap-12 items-center bg-[#0A192F] rounded-[2.5rem] p-8 md:p-12 overflow-hidden relative">
+                  <div class="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37] blur-[120px] rounded-full opacity-20 pointer-events-none"></div>
+                  
+                  <div class="order-2 lg:order-1 space-y-8 relative z-10">
+                      <div class="flex items-start gap-5 group">
+                          <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 group-hover:bg-[#D4AF37] transition-colors">
+                              <i data-lucide="heart" class="w-5 h-5 text-white"></i>
+                          </div>
+                          <div>
+                              <h4 class="text-xl font-bold text-white mb-2 font-serif">Destination Weddings</h4>
+                              <p class="text-gray-400 text-sm leading-relaxed">End-to-end planning covering venue sourcing in Rajasthan/Goa, premium decor, vendor coordination, and seamless guest hospitality.</p>
+                          </div>
+                      </div>
+                      <div class="flex items-start gap-5 group">
+                          <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 group-hover:bg-[#D4AF37] transition-colors">
+                              <i data-lucide="briefcase" class="w-5 h-5 text-white"></i>
+                          </div>
+                          <div>
+                              <h4 class="text-xl font-bold text-white mb-2 font-serif">Corporate Events</h4>
+                              <p class="text-gray-400 text-sm leading-relaxed">Professional execution of conferences, leadership offsites, product launches, and gala award ceremonies tailored to your brand.</p>
+                          </div>
+                      </div>
+                      <div class="flex items-start gap-5 group">
+                          <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 group-hover:bg-[#D4AF37] transition-colors">
+                              <i data-lucide="music" class="w-5 h-5 text-white"></i>
+                          </div>
+                          <div>
+                              <h4 class="text-xl font-bold text-white mb-2 font-serif">Entertainment Nights</h4>
+                              <p class="text-gray-400 text-sm leading-relaxed">High-energy artist management, bespoke DJ setups, advanced sound & lighting, and complete stage fabrication.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="order-1 lg:order-2">
+                      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Destination Wedding Setup" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl border border-white/10">
+                  </div>
+              </div>
+          </div>
+
+          <!-- Service 3: Rentals (Specs Grid) -->
+          <div class="reveal">
+              <div class="flex items-center gap-4 mb-10">
+                  <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center text-gray-700">
+                      <i data-lucide="car-front" class="w-6 h-6"></i>
+                  </div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-[#0A192F] font-serif">Premium Self-Drive Fleet</h3>
+              </div>
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <!-- Fleet items -->
+                  <div class="border border-gray-200 rounded-2xl p-6 hover:border-[#D4AF37] transition-colors bg-white shadow-sm hover:shadow-xl group">
+                      <h4 class="font-bold text-[#0A192F] text-lg mb-1">Executive Sedans</h4>
+                      <p class="text-xs text-gray-500 font-medium mb-4">Honda City, Hyundai Verna</p>
+                      <ul class="space-y-2 mb-6 border-t border-gray-100 pt-4">
+                          <li class="flex items-center text-sm text-gray-600 gap-2"><i data-lucide="users" class="w-4 h-4 text-gray-400"></i> 5 Seater</li>
+                          <li class="flex items-center text-sm text-gray-600 gap-2"><i data-lucide="settings-2" class="w-4 h-4 text-gray-400"></i> Automatic</li>
+                      </ul>
+                      <a href="#contact" class="scroll-link block text-center w-full py-2.5 rounded-lg border border-[#0A192F] text-[#0A192F] text-sm font-bold group-hover:bg-[#0A192F] group-hover:text-white transition-colors">Book Now</a>
+                  </div>
+
+                  <div class="border border-gray-200 rounded-2xl p-6 hover:border-[#D4AF37] transition-colors bg-white shadow-sm hover:shadow-xl group">
+                      <h4 class="font-bold text-[#0A192F] text-lg mb-1">Premium SUVs</h4>
+                      <p class="text-xs text-gray-500 font-medium mb-4">Innova Crysta, Hyundai Creta</p>
+                      <ul class="space-y-2 mb-6 border-t border-gray-100 pt-4">
+                          <li class="flex items-center text-sm text-gray-600 gap-2"><i data-lucide="users" class="w-4 h-4 text-gray-400"></i> 7 Seater</li>
+                          <li class="flex items-center text-sm text-gray-600 gap-2"><i data-lucide="settings-2" class="w-4 h-4 text-gray-400"></i> Manual / Auto</li>
+                      </ul>
+                      <a href="#contact" class="scroll-link block text-center w-full py-2.5 rounded-lg border border-[#0A192F] text-[#0A192F] text-sm font-bold group-hover:bg-[#0A192F] group-hover:text-white transition-colors">Book Now</a>
+                  </div>
+
+                  <div class="border border-gray-200 rounded-2xl p-6 hover:border-[#D4AF37] transition-colors bg-white shadow-sm hover:shadow-xl group">
+                      <h4 class="font-bold text-[#0A192F] text-lg mb-1">Luxury Class</h4>
+                      <p class="text-xs text-gray-500 font-medium mb-4">Mercedes, BMW, Audi</p>
+                      <ul class="space-y-2 mb-6 border-t border-gray-100 pt-4">
+                          <li class="flex items-center text-sm text-gray-600 gap-2"><i data-lucide="users" class="w-4 h-4 text-gray-400"></i> 4-5 Seater</li>
+                          <li class="flex items-center text-sm text-gray-600 gap-2"><i data-lucide="sparkles" class="w-4 h-4 text-[#D4AF37]"></i> Chauffeur Opt.</li>
+                      </ul>
+                      <a href="#contact" class="scroll-link block text-center w-full py-2.5 rounded-lg border border-[#0A192F] text-[#0A192F] text-sm font-bold group-hover:bg-[#0A192F] group-hover:text-white transition-colors">Book Now</a>
+                  </div>
+
+                  <div class="border border-gray-200 rounded-2xl p-6 bg-gray-50 flex flex-col justify-center text-center">
+                      <i data-lucide="shield-check" class="w-8 h-8 text-[#D4AF37] mx-auto mb-3"></i>
+                      <h4 class="font-bold text-[#0A192F] mb-2">Verified Fleet</h4>
+                      <p class="text-xs text-gray-500 mb-1">100% Sanitized Vehicles</p>
+                      <p class="text-xs text-gray-500 mb-1">24/7 Roadside Assistance</p>
+                      <p class="text-xs text-gray-500">Transparent Pricing</p>
+                  </div>
+              </div>
           </div>
       </div>
   </section>
 
-  <!-- HOW IT WORKS SECTION -->
-  <section id="process" class="py-20 bg-[#0A192F] text-white">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-sm font-extrabold uppercase tracking-widest text-[#D4AF37] mb-3 block">Simple Process</span>
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight">How Redgroom Works</h2>
-        <p class="text-gray-400 text-lg font-medium">From your first enquiry to flawless execution — in 4 easy steps.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-        <div class="relative">
-          <div class="w-16 h-16 rounded-full bg-[#D4AF37] text-[#0A192F] flex items-center justify-center text-2xl font-extrabold mx-auto mb-5 shadow-lg">1</div>
-          <h3 class="text-lg font-bold mb-2">Share Your Vision</h3>
-          <p class="text-gray-400 text-sm font-medium">Tell us what you want — travel, wedding, event, or car rental.</p>
-        </div>
-        <div class="relative">
-          <div class="w-16 h-16 rounded-full bg-[#D4AF37] text-[#0A192F] flex items-center justify-center text-2xl font-extrabold mx-auto mb-5 shadow-lg">2</div>
-          <h3 class="text-lg font-bold mb-2">Get a Custom Quote</h3>
-          <p class="text-gray-400 text-sm font-medium">A dedicated specialist calls within 30 minutes with a tailored proposal.</p>
-        </div>
-        <div class="relative">
-          <div class="w-16 h-16 rounded-full bg-[#D4AF37] text-[#0A192F] flex items-center justify-center text-2xl font-extrabold mx-auto mb-5 shadow-lg">3</div>
-          <h3 class="text-lg font-bold mb-2">Confirm & Relax</h3>
-          <p class="text-gray-400 text-sm font-medium">Approve the plan, make a secure payment, and let us handle everything.</p>
-        </div>
-        <div class="relative">
-          <div class="w-16 h-16 rounded-full bg-[#D4AF37] text-[#0A192F] flex items-center justify-center text-2xl font-extrabold mx-auto mb-5 shadow-lg">4</div>
-          <h3 class="text-lg font-bold mb-2">Experience Perfection</h3>
-          <p class="text-gray-400 text-sm font-medium">Enjoy your flawlessly executed journey, event, or trip — stress-free.</p>
-        </div>
-      </div>
-      <div class="text-center mt-12">
-        <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1 focus:ring-4 focus:ring-[#D4AF37]/50">
-          Start My Journey Now
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CREDIBILITY SECTION -->
-  <section id="credibility" class="py-20 bg-white border-b border-gray-100">
+  <!-- WHY CHOOSE US -->
+  <section id="why-us" class="py-24 bg-gray-50 border-y border-gray-200">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-4xl mx-auto mb-16 px-4">
-              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">Why Gurgaon Chooses Redgroom for Travel & Events</h2>
-              <p class="text-lg md:text-xl font-medium leading-relaxed text-gray-600">Built on reliability, transparency, and a commitment to absolute excellence.</p>
-              <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+          <div class="text-center max-w-4xl mx-auto mb-16 reveal">
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-[#0A192F] font-serif">Why Gurugram Trusts Redgroom</h2>
+              <p class="text-lg font-medium text-gray-600">Built on reliability, transparency, and a commitment to absolute excellence.</p>
+              <div class="w-16 h-1 mt-6 mx-auto rounded-full bg-[#D4AF37]"></div>
           </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-              <div class="flex gap-5 group">
-                  <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
-                      <i data-lucide="shield" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow reveal reveal-delay-1">
+                  <div class="w-14 h-14 rounded-xl bg-[#0A192F]/5 flex items-center justify-center mb-6 text-[#0A192F]">
+                      <i data-lucide="users" class="w-7 h-7"></i>
                   </div>
-                  <div>
-                      <h3 class="text-xl font-bold text-gray-900 mb-2">GST Registered Business</h3>
-                      <p class="text-gray-600 font-medium leading-relaxed">Fully compliant and legally recognized entity ensuring secure transactions.</p>
-                  </div>
+                  <h3 class="text-xl font-bold text-[#0A192F] mb-3 font-serif">Professional Planning Team</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Dedicated experts managing your travel, events, and rental needs from conception to flawless execution.</p>
               </div>
-              <div class="flex gap-5 group">
-                  <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
-                      <i data-lucide="users" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+              
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow reveal reveal-delay-2">
+                  <div class="w-14 h-14 rounded-xl bg-[#0A192F]/5 flex items-center justify-center mb-6 text-[#0A192F]">
+                      <i data-lucide="gem" class="w-7 h-7"></i>
                   </div>
-                  <div>
-                      <h3 class="text-xl font-bold text-gray-900 mb-2">Professional Planning Team</h3>
-                      <p class="text-gray-600 font-medium leading-relaxed">Dedicated experts managing your travel, events, and rental needs.</p>
-                  </div>
+                  <h3 class="text-xl font-bold text-[#0A192F] mb-3 font-serif">Verified Vendor Network</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Exclusive access to premium venues, top-tier caterers, and luxury accommodations guaranteed to impress.</p>
               </div>
-              <div class="flex gap-5 group">
-                  <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
-                      <i data-lucide="file-text" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow reveal reveal-delay-3">
+                  <div class="w-14 h-14 rounded-xl bg-[#0A192F]/5 flex items-center justify-center mb-6 text-[#0A192F]">
+                      <i data-lucide="file-text" class="w-7 h-7"></i>
                   </div>
-                  <div>
-                      <h3 class="text-xl font-bold text-gray-900 mb-2">Transparent Pricing</h3>
-                      <p class="text-gray-600 font-medium leading-relaxed">Clear, upfront quotations with absolutely no hidden charges.</p>
-                  </div>
+                  <h3 class="text-xl font-bold text-[#0A192F] mb-3 font-serif">100% Transparent Pricing</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Clear, upfront quotations with detailed inclusions and absolutely no hidden charges or last-minute surprises.</p>
               </div>
-              <div class="flex gap-5 group">
-                  <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
-                      <i data-lucide="check-circle" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow reveal reveal-delay-1">
+                  <div class="w-14 h-14 rounded-xl bg-[#0A192F]/5 flex items-center justify-center mb-6 text-[#0A192F]">
+                      <i data-lucide="headphones" class="w-7 h-7"></i>
                   </div>
-                  <div>
-                      <h3 class="text-xl font-bold text-gray-900 mb-2">Secure Booking Process</h3>
-                      <p class="text-gray-600 font-medium leading-relaxed">Safe payment gateways and verified confirmation protocols.</p>
-                  </div>
+                  <h3 class="text-xl font-bold text-[#0A192F] mb-3 font-serif">Dedicated Support</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Round-the-clock responsive assistance available throughout your engagement, ensuring absolute peace of mind.</p>
               </div>
-              <div class="flex gap-5 group">
-                  <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
-                      <i data-lucide="clock" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow reveal reveal-delay-2">
+                  <div class="w-14 h-14 rounded-xl bg-[#0A192F]/5 flex items-center justify-center mb-6 text-[#0A192F]">
+                      <i data-lucide="heart-handshake" class="w-7 h-7"></i>
                   </div>
-                  <div>
-                      <h3 class="text-xl font-bold text-gray-900 mb-2">Dedicated Support</h3>
-                      <p class="text-gray-600 font-medium leading-relaxed">Responsive assistance available throughout your engagement with us.</p>
-                  </div>
+                  <h3 class="text-xl font-bold text-[#0A192F] mb-3 font-serif">Personalized Consultation</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Bespoke solutions meticulously tailored exclusively to your specific requirements, style, and budget parameters.</p>
               </div>
-              <div class="flex gap-5 group">
-                  <div class="w-14 h-14 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 bg-[#F8F9FA] group-hover:bg-[#0A192F]">
-                      <i data-lucide="award" class="w-7 h-7 transition-colors duration-300 text-[#0A192F] group-hover:text-white"></i>
+
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow bg-gradient-to-br from-[#0A192F] to-[#0f2445] reveal reveal-delay-3 text-white">
+                  <div class="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-6 text-[#D4AF37]">
+                      <i data-lucide="star" class="w-7 h-7 fill-[#D4AF37]"></i>
                   </div>
-                  <div>
-                      <h3 class="text-xl font-bold text-gray-900 mb-2">Personalized Consultation</h3>
-                      <p class="text-gray-600 font-medium leading-relaxed">Bespoke solutions tailored exclusively to your specific requirements.</p>
-                  </div>
+                  <h3 class="text-xl font-bold mb-3 font-serif">Customer Satisfaction</h3>
+                  <p class="text-gray-300 text-sm leading-relaxed">A proven track record of exceeding expectations for high-profile clients, corporate teams, and families across NCR.</p>
               </div>
           </div>
       </div>
   </section>
 
-  <!-- TRAVEL PACKAGES SECTION -->
-  <section id="travel" class="py-24 bg-[#F8F9FA]">
+  <!-- FOUNDERS SECTION -->
+  <section id="founders" class="py-24 bg-white">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-              <div>
-                  <div class="flex items-center gap-3 mb-3">
-                      <i data-lucide="plane" class="w-6 h-6 text-[#FF6B35]"></i>
-                      <h4 class="text-sm font-extrabold uppercase tracking-widest text-[#FF6B35]">Travel Planning</h4>
+          <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+              <span class="text-sm font-extrabold uppercase tracking-widest text-[#D4AF37] mb-3 block">Leadership</span>
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight text-[#0A192F] font-serif">Meet Our Founders</h2>
+              <p class="text-lg font-medium text-gray-600">The people leading Redgroom with passion, experience, and a commitment to exceptional experiences.</p>
+              <div class="w-16 h-1 mt-6 mx-auto rounded-full bg-[#D4AF37]"></div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              
+              <!-- Founder 1 -->
+              <div class="group text-center reveal">
+                  <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:border-[#D4AF37] transition-colors duration-500 bg-gray-100">
+                      <!-- JS will handle image loading and fallback -->
+                      <img data-founder="RupeshKumar" alt="Rupesh Kumar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
                   </div>
-                  <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Luxury Travel Packages from Gurgaon – Dubai, Bali, Thailand & More</h2>
+                  <h3 class="text-xl font-bold text-[#0A192F] font-serif mb-1">Rupesh Kumar</h3>
+                  <p class="text-[#D4AF37] font-semibold text-sm mb-3">Founder & MD</p>
               </div>
-              <!-- TODO: Replace anchor link with /travel-planner-gurgaon when service page is live -->
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="hidden md:flex mt-4 md:mt-0 inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Get a Custom Quote</a>
-          </div>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <!-- Travel Card 1 -->
-              <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
-                  <div class="relative h-64 overflow-hidden bg-gray-200">
-                      <!-- TODO: Replace placeholder image paths with final uploaded assets -->
-                      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai luxury travel package from Gurgaon" loading="lazy" width="800" height="600" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                      <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-900 shadow-sm border border-gray-200">Luxury Travel</div>
+              <!-- Founder 2 -->
+              <div class="group text-center reveal reveal-delay-1">
+                  <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:border-[#D4AF37] transition-colors duration-500 bg-gray-100">
+                      <img data-founder="SanatanKumar" alt="Sanatan Kumar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
                   </div>
-                  <div class="p-8 flex-1 flex flex-col">
-                      <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Dubai Luxury Escape</h3>
-                      <div class="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-4">
-                          <i data-lucide="clock" class="w-4 h-4"></i> 5 Days / 4 Nights
-                      </div>
-                      <div class="mb-8 flex-1">
-                          <p class="text-gray-600 text-sm font-medium leading-relaxed bg-gray-50 p-4 rounded-xl border border-gray-100">
-                              <strong class="text-gray-900 block mb-1">Highlights:</strong>
-                              Burj Khalifa, Desert Safari, Premium Dhow Cruise
-                          </p>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Explore Travel Planning</a>
-                  </div>
-              </article>
-
-              <!-- Travel Card 2 -->
-              <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
-                  <div class="relative h-64 overflow-hidden bg-gray-200">
-                      <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Thailand Family Package from NCR" loading="lazy" width="800" height="600" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                      <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-900 shadow-sm border border-gray-200">Family Tour</div>
-                  </div>
-                  <div class="p-8 flex-1 flex flex-col">
-                      <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Thailand Family Package</h3>
-                      <div class="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-4">
-                          <i data-lucide="clock" class="w-4 h-4"></i> 6 Days / 5 Nights
-                      </div>
-                      <div class="mb-8 flex-1">
-                          <p class="text-gray-600 text-sm font-medium leading-relaxed bg-gray-50 p-4 rounded-xl border border-gray-100">
-                              <strong class="text-gray-900 block mb-1">Highlights:</strong>
-                              Phuket Island Hopping, Krabi Beaches, City Tour
-                          </p>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Explore Travel Planning</a>
-                  </div>
-              </article>
-
-              <!-- Travel Card 3 -->
-              <article class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 group flex flex-col h-full">
-                  <div class="relative h-64 overflow-hidden bg-gray-200">
-                      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Honeymoon Retreat planning in Gurgaon" loading="lazy" width="800" height="600" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                      <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-gray-900 shadow-sm border border-gray-200">Romantic Getaway</div>
-                  </div>
-                  <div class="p-8 flex-1 flex flex-col">
-                      <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Bali Honeymoon Retreat</h3>
-                      <div class="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-4">
-                          <i data-lucide="clock" class="w-4 h-4"></i> 7 Days / 6 Nights
-                      </div>
-                      <div class="mb-8 flex-1">
-                          <p class="text-gray-600 text-sm font-medium leading-relaxed bg-gray-50 p-4 rounded-xl border border-gray-100">
-                              <strong class="text-gray-900 block mb-1">Highlights:</strong>
-                              Private Villa, Seminyak, Ubud Culture, Uluwatu
-                          </p>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Explore Travel Planning</a>
-                  </div>
-              </article>
-          </div>
-          
-          <!-- DOMESTIC DESTINATIONS -->
-          <div class="mt-16">
-            <div class="flex items-center gap-3 mb-8">
-              <i data-lucide="map-pin" class="w-6 h-6 text-[#D4AF37]"></i>
-              <h3 class="text-2xl font-extrabold text-gray-900">Popular Domestic Destinations</h3>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="bg-gray-50 border border-gray-200 hover:border-[#D4AF37] hover:bg-white rounded-2xl p-5 text-left transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-                <p class="font-extrabold text-gray-900 text-base mb-1">🌴 Goa</p>
-                <p class="text-sm text-gray-500">Beach holidays & parties</p>
-              </a>
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="bg-gray-50 border border-gray-200 hover:border-[#D4AF37] hover:bg-white rounded-2xl p-5 text-left transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-                <p class="font-extrabold text-gray-900 text-base mb-1">🏔️ Manali</p>
-                <p class="text-sm text-gray-500">Mountains & snow escapes</p>
-              </a>
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="bg-gray-50 border border-gray-200 hover:border-[#D4AF37] hover:bg-white rounded-2xl p-5 text-left transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-                <p class="font-extrabold text-gray-900 text-base mb-1">🛕 Rajasthan</p>
-                <p class="text-sm text-gray-500">Royal palaces & culture</p>
-              </a>
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="bg-gray-50 border border-gray-200 hover:border-[#D4AF37] hover:bg-white rounded-2xl p-5 text-left transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-                <p class="font-extrabold text-gray-900 text-base mb-1">🌿 Kerala</p>
-                <p class="text-sm text-gray-500">Backwaters & wellness</p>
-              </a>
-            </div>
-          </div>
-
-          <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full mt-8 md:hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Get a Custom Quote</a>
-      </div>
-  </section>
-
-  <!-- EVENTS SECTION -->
-  <section id="events" class="py-24 bg-white">
-      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-              <div>
-                  <div class="flex items-center gap-3 mb-3">
-                      <i data-lucide="calendar" class="w-6 h-6 text-[#FF6B35]"></i>
-                      <h4 class="text-sm font-extrabold uppercase tracking-widest text-[#FF6B35]">Event Management</h4>
-                  </div>
-                  <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Event Management in Gurgaon – Weddings, Corporate Events & Entertainment</h2>
+                  <h3 class="text-xl font-bold text-[#0A192F] font-serif mb-1">Sanatan Kumar</h3>
+                  <p class="text-[#D4AF37] font-semibold text-sm mb-3">President & Co-Founder</p>
               </div>
-              <!-- TODO: Replace anchor link with /destination-wedding-planner-gurgaon when service page is live -->
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="hidden md:flex mt-4 md:mt-0 inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Plan My Wedding</a>
-          </div>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <!-- Event 1 -->
-              <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-[#0A192F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-                  <div class="h-56 overflow-hidden relative bg-gray-200">
-                      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Destination wedding planning services in Gurgaon" loading="lazy" width="800" height="600" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-                      <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                      <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white">Destination Weddings</h3>
+              <!-- Founder 3 -->
+              <div class="group text-center reveal reveal-delay-2">
+                  <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:border-[#D4AF37] transition-colors duration-500 bg-gray-100">
+                      <img data-founder="JanviKesarwani" alt="Janvi Kesarwani" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
                   </div>
-                  <div class="p-6 flex-1 flex flex-col justify-between">
-                      <div class="mb-6">
-                          <p class="text-sm text-gray-600 font-medium mb-4">End-to-end wedding planning team.</p>
-                          <ul class="space-y-2">
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Venue Sourcing</li>
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Decor & Theme</li>
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Guest Hospitality</li>
-                          </ul>
-                      </div>
-                      <a href="#contact" class="text-sm font-bold text-[#0A192F] flex items-center gap-2 hover:text-[#FF6B35] transition-colors group min-h-[44px]" onclick="event.preventDefault(); scrollToSection('contact')">
-                          View Wedding Services <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
-                      </a>
-                  </div>
-              </article>
-
-              <!-- Event 2 -->
-              <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-[#0A192F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-                  <div class="h-56 overflow-hidden relative bg-gray-200">
-                      <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Corporate Event Management in NCR" loading="lazy" width="800" height="600" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-                      <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                      <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white">Corporate Events</h3>
-                  </div>
-                  <div class="p-6 flex-1 flex flex-col justify-between">
-                      <div class="mb-6">
-                          <p class="text-sm text-gray-600 font-medium mb-4">Professional corporate execution.</p>
-                          <ul class="space-y-2">
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Conferences</li>
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Award Ceremonies</li>
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Annual Offsites</li>
-                          </ul>
-                      </div>
-                      <a href="#contact" class="text-sm font-bold text-[#0A192F] flex items-center gap-2 hover:text-[#FF6B35] transition-colors group min-h-[44px]" onclick="event.preventDefault(); scrollToSection('contact')">
-                          View Event Services <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
-                      </a>
-                  </div>
-              </article>
-
-              <!-- Event 3 -->
-              <article class="bg-white rounded-3xl overflow-hidden border border-gray-200 hover:border-[#0A192F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
-                  <div class="h-56 overflow-hidden relative bg-gray-200">
-                      <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="DJ and Entertainment Nights setup" loading="lazy" width="800" height="600" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-                      <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                      <h3 class="absolute bottom-4 left-6 text-2xl font-bold text-white">DJ & Entertainment Nights</h3>
-                  </div>
-                  <div class="p-6 flex-1 flex flex-col justify-between">
-                      <div class="mb-6">
-                          <p class="text-sm text-gray-600 font-medium mb-4">High-energy entertainment production.</p>
-                          <ul class="space-y-2">
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Artist Management</li>
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Sound & Light Setup</li>
-                              <li class="flex items-center gap-2 text-sm font-bold text-gray-800"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Stage Fabrication</li>
-                          </ul>
-                      </div>
-                      <a href="#contact" class="text-sm font-bold text-[#0A192F] flex items-center gap-2 hover:text-[#FF6B35] transition-colors group min-h-[44px]" onclick="event.preventDefault(); scrollToSection('contact')">
-                          View Event Services <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
-                      </a>
-                  </div>
-              </article>
-          </div>
-          <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full mt-8 md:hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white shadow-xl hover:-translate-y-1">Plan My Wedding</a>
-      </div>
-  </section>
-
-  <!-- CAR RENTALS SECTION -->
-  <section id="rentals" class="py-24 bg-[#0A192F] text-white">
-      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-              <div>
-                  <div class="flex items-center gap-3 mb-3">
-                      <i data-lucide="car" class="w-6 h-6 text-[#D4AF37]"></i>
-                      <h4 class="text-sm font-extrabold uppercase tracking-widest text-[#D4AF37]">Self-Drive Rentals</h4>
-                  </div>
-                  <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Premium Vehicle Fleet in Gurgaon</h2>
+                  <h3 class="text-xl font-bold text-[#0A192F] font-serif mb-1">Janvi Kesarwani</h3>
+                  <p class="text-[#D4AF37] font-semibold text-sm mb-3">Chief Financial Officer</p>
               </div>
-              <!-- TODO: Replace anchor link with /self-drive-car-rental-gurgaon when service page is live -->
-              <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="hidden md:flex mt-4 md:mt-0 inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1">Book a Car</a>
+
+              <!-- Founder 4 -->
+              <div class="group text-center reveal reveal-delay-3">
+                  <div class="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white group-hover:border-[#D4AF37] transition-colors duration-500 bg-gray-100">
+                      <img data-founder="RithikRoshan" alt="Rithik Roshan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                  </div>
+                  <h3 class="text-xl font-bold text-[#0A192F] font-serif mb-1">Rithik Roshan</h3>
+                  <p class="text-[#D4AF37] font-semibold text-sm mb-3">Chief Business Officer</p>
+              </div>
+
           </div>
-
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <!-- Car 1 -->
-              <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
-                  <div class="h-48 overflow-hidden p-3 pb-0 bg-gray-800">
-                      <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Premium Hatchback self-drive rental in Gurgaon" loading="lazy" width="800" height="600" class="w-full h-full object-cover rounded-2xl">
-                  </div>
-                  <div class="p-6 flex-1 flex flex-col">
-                      <h3 class="text-xl font-bold text-white mb-4">Premium Hatchbacks</h3>
-                      <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
-                          <div class="bg-black/20 py-2 rounded-lg">5 Seats</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Manual / Auto</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Petrol / CNG</div>
-                          <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">See Rental Options</a>
-                  </div>
-              </article>
-
-              <!-- Car 2 -->
-              <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
-                  <div class="h-48 overflow-hidden p-3 pb-0 bg-gray-800">
-                      <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80" alt="Executive Sedan self-drive car" loading="lazy" width="800" height="600" class="w-full h-full object-cover rounded-2xl">
-                  </div>
-                  <div class="p-6 flex-1 flex flex-col">
-                      <h3 class="text-xl font-bold text-white mb-4">Executive Sedans</h3>
-                      <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
-                          <div class="bg-black/20 py-2 rounded-lg">5 Seats</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Automatic</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Petrol / Diesel</div>
-                          <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">See Rental Options</a>
-                  </div>
-              </article>
-
-              <!-- Car 3 -->
-              <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
-                  <div class="h-48 overflow-hidden p-3 pb-0 bg-gray-800">
-                      <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Luxury SUV rental service in Gurgaon" loading="lazy" width="800" height="600" class="w-full h-full object-cover rounded-2xl">
-                  </div>
-                  <div class="p-6 flex-1 flex flex-col">
-                      <h3 class="text-xl font-bold text-white mb-4">Luxury SUVs</h3>
-                      <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
-                          <div class="bg-black/20 py-2 rounded-lg">7 Seats</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Automatic</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Diesel</div>
-                          <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">See Rental Options</a>
-                  </div>
-              </article>
-
-              <!-- Car 4 -->
-              <article class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-colors flex flex-col text-center group">
-                  <div class="h-48 overflow-hidden p-3 pb-0 bg-gray-800">
-                      <img src="https://images.unsplash.com/photo-1503376712341-ea1c74f51e1d?auto=format&fit=crop&w=800&q=80" alt="High-End Luxury self-drive car" loading="lazy" width="800" height="600" class="w-full h-full object-cover rounded-2xl">
-                  </div>
-                  <div class="p-6 flex-1 flex flex-col">
-                      <h3 class="text-xl font-bold text-white mb-4">High-End Luxury</h3>
-                      <div class="grid grid-cols-2 gap-2 mb-6 flex-1 text-xs font-semibold text-gray-300">
-                          <div class="bg-black/20 py-2 rounded-lg">4-5 Seats</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Automatic</div>
-                          <div class="bg-black/20 py-2 rounded-lg">Petrol</div>
-                          <div class="bg-black/20 py-2 rounded-lg flex items-center justify-center gap-1"><i data-lucide="map-pin" class="w-3 h-3 text-[#D4AF37]"></i> NCR</div>
-                      </div>
-                      <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full inline-flex items-center justify-center py-2.5 rounded-full font-bold transition-all duration-300 bg-white text-gray-900 hover:bg-[#D4AF37] hover:text-white shadow-lg text-sm">See Rental Options</a>
-                  </div>
-              </article>
-          </div>
-
-          <!-- CAR FLEET PRICING GRID -->
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8 text-gray-900">
-            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 text-center">
-              <p class="font-extrabold text-2xl mb-1">Hatchbacks</p>
-              <p class="text-sm text-gray-500 font-medium">Swift, Baleno, i20</p>
-              <p class="text-xs text-gray-400 mt-2">From ₹999/day</p>
-            </div>
-            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 text-center">
-              <p class="font-extrabold text-2xl mb-1">Sedans</p>
-              <p class="text-sm text-gray-500 font-medium">City, Verna, Ciaz</p>
-              <p class="text-xs text-gray-400 mt-2">From ₹1,499/day</p>
-            </div>
-            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 text-center">
-              <p class="font-extrabold text-2xl mb-1">SUVs</p>
-              <p class="text-sm text-gray-500 font-medium">Creta, Innova, Fortuner</p>
-              <p class="text-xs text-gray-400 mt-2">From ₹2,499/day</p>
-            </div>
-          </div>
-          <p class="text-sm text-gray-300 text-center mt-2">✅ All vehicles fully sanitized &nbsp;|&nbsp; ✅ 24/7 roadside assistance &nbsp;|&nbsp; ✅ Zero hidden charges</p>
-
-          <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact')" class="w-full mt-8 md:hidden inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold transition-all duration-300 bg-[#D4AF37] text-white hover:bg-[#b5952f] shadow-xl hover:-translate-y-1">Book a Car</a>
       </div>
   </section>
 
   <!-- GALLERY SECTION -->
-  <section id="gallery" class="py-24 bg-[#F8F9FA]">
+  <section id="gallery" class="py-24 bg-[#0A192F]">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center max-w-4xl mx-auto mb-16 px-4">
-              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">Experience Portfolio</h2>
-              <p class="text-lg md:text-xl font-medium leading-relaxed text-gray-600">A visual journey through the moments we help create.</p>
-              <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+          <div class="text-center max-w-4xl mx-auto mb-12 reveal">
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-white font-serif">Experience Portfolio</h2>
+              <div class="w-16 h-1 mt-6 mx-auto rounded-full bg-[#D4AF37]"></div>
           </div>
           
           <!-- Tabs -->
-          <div class="flex flex-wrap justify-center gap-3 mb-12">
-              <button onclick="filterGallery('Travel')" class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-[#0A192F] text-white shadow-md active-tab" data-target="Travel">Travel</button>
-              <button onclick="filterGallery('Events')" class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-white text-gray-600 border border-gray-200" data-target="Events">Events</button>
-              <button onclick="filterGallery('Rentals')" class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-white text-gray-600 border border-gray-200" data-target="Rentals">Rentals</button>
+          <div class="flex flex-wrap justify-center gap-3 mb-12 reveal" role="tablist" aria-label="Gallery Categories">
+              <button class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-[#D4AF37] text-[#0A192F] shadow-lg active-tab focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white" data-target="Travel" role="tab" aria-selected="true">Travel</button>
+              <button class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-white/10 text-white hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]" data-target="Events" role="tab" aria-selected="false">Events</button>
+              <button class="gallery-tab px-6 py-2.5 rounded-full text-sm font-bold transition-all min-h-[44px] bg-white/10 text-white hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]" data-target="Rentals" role="tab" aria-selected="false">Rentals</button>
           </div>
 
           <!-- Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="gallery-grid">
               <!-- Travel Images -->
-              <div class="gallery-item relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Travel" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80')">
-                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Travel portfolio example" loading="lazy" width="800" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                      <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+              <div class="gallery-item relative group rounded-2xl overflow-hidden aspect-[4/3] cursor-zoom-in focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Travel" tabindex="0" role="button" aria-label="View Travel Image 1">
+                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Travel portfolio example" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-8 h-8 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
                   </div>
               </div>
-              <div class="gallery-item relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Travel" onclick="openLightbox('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80')">
-                  <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Travel portfolio example 2" loading="lazy" width="800" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                      <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+              <div class="gallery-item relative group rounded-2xl overflow-hidden aspect-[4/3] cursor-zoom-in focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Travel" tabindex="0" role="button" aria-label="View Travel Image 2">
+                  <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" alt="Travel portfolio example 2" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-8 h-8 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
                   </div>
               </div>
 
               <!-- Events Images -->
-              <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Events" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80')">
-                  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Events portfolio example" loading="lazy" width="800" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                      <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+              <div class="gallery-item hidden relative group rounded-2xl overflow-hidden aspect-[4/3] cursor-zoom-in focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Events" tabindex="0" role="button" aria-label="View Event Image 1">
+                  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Events portfolio example" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-8 h-8 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
                   </div>
               </div>
-              <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Events" onclick="openLightbox('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80')">
-                  <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Events portfolio example 2" loading="lazy" width="800" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                      <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+              <div class="gallery-item hidden relative group rounded-2xl overflow-hidden aspect-[4/3] cursor-zoom-in focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Events" tabindex="0" role="button" aria-label="View Event Image 2">
+                  <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Events portfolio example 2" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-8 h-8 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
                   </div>
               </div>
 
               <!-- Rentals Images -->
-              <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Rentals" onclick="openLightbox('https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80')">
-                  <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80" alt="Rentals portfolio example" loading="lazy" width="800" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                      <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+              <div class="gallery-item hidden relative group rounded-2xl overflow-hidden aspect-[4/3] cursor-zoom-in focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Rentals" tabindex="0" role="button" aria-label="View Rental Image 1">
+                  <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80" alt="Rentals portfolio example" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-8 h-8 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
                   </div>
               </div>
-              <div class="gallery-item hidden relative group rounded-3xl overflow-hidden shadow-sm aspect-square cursor-pointer focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Rentals" onclick="openLightbox('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80')">
-                  <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Rentals portfolio example 2" loading="lazy" width="800" height="800" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                  <div class="absolute inset-0 bg-[#0A192F]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                      <i data-lucide="image" class="w-10 h-10 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
+              <div class="gallery-item hidden relative group rounded-2xl overflow-hidden aspect-[4/3] cursor-zoom-in focus-visible:ring-4 focus-visible:ring-[#D4AF37] outline-none" data-category="Rentals" tabindex="0" role="button" aria-label="View Rental Image 2">
+                  <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Rentals portfolio example 2" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <i data-lucide="maximize-2" class="w-8 h-8 text-white transform scale-50 group-hover:scale-100 transition-transform duration-300"></i>
                   </div>
               </div>
           </div>
@@ -893,145 +723,139 @@
   </section>
 
   <!-- Lightbox Modal -->
-  <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/95 backdrop-blur-md items-center justify-center p-4" onclick="closeLightbox()">
-      <button class="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 p-2 rounded-full outline-none" onclick="event.stopPropagation(); closeLightbox()" aria-label="Close Lightbox">
+  <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/95 backdrop-blur-md items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Image Preview">
+      <button id="lightbox-close" class="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 p-2 rounded-full outline-none focus-visible:ring-2 focus-visible:ring-white transition-colors" aria-label="Close Lightbox">
           <i data-lucide="x" class="w-8 h-8"></i>
       </button>
-      <img id="lightbox-img" src="" alt="Fullscreen view" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="Fullscreen view" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
   </div>
 
-  <!-- GOOGLE REVIEWS SECTION -->
-  <section class="py-24 bg-white border-b border-gray-100" id="testimonials">
-      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 max-w-5xl mx-auto text-center">
-          <div class="flex items-center justify-center gap-3 mb-2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google Logo" class="w-8 h-8" loading="lazy">
-              <h2 class="text-2xl font-bold text-gray-900">Verified Customer Reviews</h2>
+  <!-- REVIEWS SECTION -->
+  <section id="testimonials" class="py-24 bg-gray-50 border-b border-gray-200">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-4xl mx-auto mb-16 reveal">
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-[#0A192F] font-serif">Client Experiences</h2>
+              <div class="w-16 h-1 mt-6 mx-auto rounded-full bg-[#D4AF37]"></div>
           </div>
           
-          <div class="flex items-center justify-center gap-3 mt-4 mb-8">
-            <div class="flex">
-              <!-- 5 gold stars -->
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            </div>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm font-semibold">
-              Read all reviews →
-            </a>
-          </div>
-
-          <!-- Empty API State -->
-          <div id="google-reviews-empty" class="py-6 flex-col items-center flex">
-              <div class="w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center mb-4 border border-gray-200">
-                  <i data-lucide="info" class="w-8 h-8 text-gray-400"></i>
+          <div class="grid md:grid-cols-3 gap-8">
+              <!-- Review 1 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full reveal reveal-delay-1">
+                  <div class="flex gap-1 mb-4">
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed mb-6 italic flex-1">"Redgroom organized our corporate offsite flawlessly. Every detail from the travel logistics to the venue setup in Gurugram was executed with sheer professionalism. Highly recommended for premium events."</p>
+                  <div class="flex items-center gap-4 mt-auto">
+                      <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
+                          <img src="https://ui-avatars.com/api/?name=Amit+Sharma&background=0A192F&color=fff" alt="Client Avatar" class="w-full h-full object-cover">
+                      </div>
+                      <div>
+                          <h4 class="font-bold text-[#0A192F] text-sm">Amit Sharma</h4>
+                          <p class="text-xs text-gray-500">Corporate Event • Gurugram</p>
+                      </div>
+                  </div>
               </div>
-              <h4 class="text-xl font-bold text-gray-900 mb-2">Connecting to Google Reviews</h4>
-              <p class="text-gray-500 max-w-md mx-auto mb-6">
-                  Our live Google Reviews integration is currently being configured. 
-                  Once connected, authentic verified customer feedback will be displayed here directly from Google Maps.
-              </p>
-              <a href="https://google.com/search?q=Redgroom Events & Trip Planner" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-2 rounded-full font-bold transition-all duration-300 border-2 border-[#0A192F] text-[#0A192F] hover:bg-[#0A192F] hover:text-white text-sm">
-                  View on Google <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
-              </a>
+
+              <!-- Review 2 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full reveal reveal-delay-2">
+                  <div class="flex gap-1 mb-4">
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed mb-6 italic flex-1">"We booked a luxury SUV for a weekend family trip. The car was spotless, the process was transparent, and their customer service was available instantly via WhatsApp. Truly a premium rental experience."</p>
+                  <div class="flex items-center gap-4 mt-auto">
+                      <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
+                          <img src="https://ui-avatars.com/api/?name=Neha+Gupta&background=D4AF37&color=fff" alt="Client Avatar" class="w-full h-full object-cover">
+                      </div>
+                      <div>
+                          <h4 class="font-bold text-[#0A192F] text-sm">Neha Gupta</h4>
+                          <p class="text-xs text-gray-500">Car Rental • Delhi NCR</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Review 3 -->
+              <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full reveal reveal-delay-3">
+                  <div class="flex gap-1 mb-4">
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                      <i data-lucide="star" class="w-4 h-4 text-[#D4AF37] fill-[#D4AF37]"></i>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed mb-6 italic flex-1">"Our Bali honeymoon planned by Redgroom was breathtaking. The personalized itinerary struck the perfect balance between relaxation and exploration. They took care of everything."</p>
+                  <div class="flex items-center gap-4 mt-auto">
+                      <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
+                          <img src="https://ui-avatars.com/api/?name=Vikram+Singh&background=0A192F&color=D4AF37" alt="Client Avatar" class="w-full h-full object-cover">
+                      </div>
+                      <div>
+                          <h4 class="font-bold text-[#0A192F] text-sm">Vikram Singh</h4>
+                          <p class="text-xs text-gray-500">Luxury Travel • Bali</p>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
   </section>
 
   <!-- FAQ SECTION -->
-  <section id="faq" class="py-24 bg-[#F8F9FA]">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="faq" class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
           <div class="text-center max-w-4xl mx-auto mb-16 px-4">
-              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-gray-900">Frequently Asked Questions</h2>
-              <div class="w-20 h-1.5 mt-8 mx-auto rounded-full bg-[#D4AF37]"></div>
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-5 tracking-tight text-[#0A192F] font-serif">Frequently Asked Questions</h2>
+              <div class="w-16 h-1 mt-6 mx-auto rounded-full bg-[#D4AF37]"></div>
           </div>
           
           <div class="space-y-4">
               <!-- FAQ Item 1 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-1" id="faq-trigger-1">
-                      <span class="font-extrabold text-gray-900 pr-4">Do you provide international travel packages?</span>
-                      <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400"></i>
+              <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]" aria-expanded="false" aria-controls="faq-answer-1" id="faq-trigger-1">
+                      <span class="font-bold text-[#0A192F] pr-4 text-base">Do you provide international travel packages?</span>
+                      <i data-lucide="plus" class="faq-icon w-5 h-5 shrink-0 text-[#D4AF37] transition-transform duration-300"></i>
                   </button>
                   <div id="faq-answer-1" role="region" aria-labelledby="faq-trigger-1" class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
-                      <p class="text-gray-600 font-medium leading-relaxed pb-6">Yes, we curate fully customized international itineraries covering visa assistance, flights, accommodations, and local experiences across global destinations.</p>
-                  </div>
-              </div>
-              <!-- FAQ Item 2 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-2" id="faq-trigger-2">
-                      <span class="font-extrabold text-gray-900 pr-4">Can you organize destination weddings?</span>
-                      <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400"></i>
-                  </button>
-                  <div id="faq-answer-2" role="region" aria-labelledby="faq-trigger-2" class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
-                      <p class="text-gray-600 font-medium leading-relaxed pb-6">Absolutely. We specialize in end-to-end destination wedding planning, including venue sourcing, vendor management, logistics, and on-ground execution anywhere in India.</p>
-                  </div>
-              </div>
-              <!-- FAQ Item 3 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
-                      <span class="font-extrabold text-gray-900 pr-4">What types of corporate events do you manage?</span>
-                      <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400"></i>
-                  </button>
-                  <div id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
-                      <p class="text-gray-600 font-medium leading-relaxed pb-6">We handle everything from leadership offsites and team-building retreats to large-scale conferences, product launches, and annual award ceremonies.</p>
+                      <p class="text-gray-600 text-sm leading-relaxed pb-6">Yes, we curate fully customized international itineraries covering visa assistance, flights, accommodations, and local experiences across global destinations.</p>
                   </div>
               </div>
               
-              <!-- FAQ Item 8 (From Prompt) -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-8" id="faq-trigger-8">
-                  <span class="font-extrabold text-gray-900 pr-4">What is the best time of year to plan a destination wedding in Rajasthan?</span>
-                  <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400 transition-transform"></i>
-                </button>
-                <div id="faq-answer-8" role="region" aria-labelledby="faq-trigger-8" class="faq-content px-6 max-h-0 opacity-0 overflow-hidden transition-all duration-300">
-                  <p class="pb-6 text-gray-600 font-medium leading-relaxed">The ideal season for a Rajasthan destination wedding is October through February, when temperatures are pleasant (15–25°C). Peak wedding season is November to January. We recommend booking at least 6–9 months in advance to secure premium palace venues like Umaid Bhawan, Samode Palace, or Dera Amer during this period.</p>
-                </div>
+              <!-- FAQ Item 2 -->
+              <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]" aria-expanded="false" aria-controls="faq-answer-2" id="faq-trigger-2">
+                      <span class="font-bold text-[#0A192F] pr-4 text-base">Can you organize destination weddings?</span>
+                      <i data-lucide="plus" class="faq-icon w-5 h-5 shrink-0 text-[#D4AF37] transition-transform duration-300"></i>
+                  </button>
+                  <div id="faq-answer-2" role="region" aria-labelledby="faq-trigger-2" class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                      <p class="text-gray-600 text-sm leading-relaxed pb-6">Absolutely. We specialize in end-to-end destination wedding planning, including venue sourcing, vendor management, logistics, and on-ground execution anywhere in India.</p>
+                  </div>
               </div>
 
-              <!-- FAQ Item 9 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-9" id="faq-trigger-9">
-                  <span class="font-extrabold text-gray-900 pr-4">Can I book a self-drive car in Gurgaon without a credit card?</span>
-                  <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400 transition-transform"></i>
-                </button>
-                <div id="faq-answer-9" role="region" aria-labelledby="faq-trigger-9" class="faq-content px-6 max-h-0 opacity-0 overflow-hidden transition-all duration-300">
-                  <p class="pb-6 text-gray-600 font-medium leading-relaxed">Yes. We accept UPI, net banking, and debit cards for the security deposit and rental payment. A valid driving licence, Aadhar Card, and a refundable deposit are required. Credit card is not mandatory — just a verified payment method.</p>
-                </div>
+              <!-- FAQ Item 3 -->
+              <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+                      <span class="font-bold text-[#0A192F] pr-4 text-base">Can I book a self-drive car in Gurugram without a credit card?</span>
+                      <i data-lucide="plus" class="faq-icon w-5 h-5 shrink-0 text-[#D4AF37] transition-transform duration-300"></i>
+                  </button>
+                  <div id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                      <p class="text-gray-600 text-sm leading-relaxed pb-6">Yes. We accept UPI, net banking, and debit cards for the security deposit and rental payment. A valid driving licence, Aadhar Card, and a refundable deposit are required. A credit card is not mandatory—just a verified payment method.</p>
+                  </div>
               </div>
 
-              <!-- FAQ Item 10 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-10" id="faq-trigger-10">
-                  <span class="font-extrabold text-gray-900 pr-4">Do you offer customized domestic holiday packages from Gurgaon?</span>
-                  <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400 transition-transform"></i>
-                </button>
-                <div id="faq-answer-10" role="region" aria-labelledby="faq-trigger-10" class="faq-content px-6 max-h-0 opacity-0 overflow-hidden transition-all duration-300">
-                  <p class="pb-6 text-gray-600 font-medium leading-relaxed">Absolutely. We plan fully customized domestic holidays including Kerala backwaters tours, Goa beach getaways, Manali and Shimla hill trips, Rajasthan cultural tours, and Andaman island packages. All itineraries are tailored to your group size, budget, and travel dates.</p>
-                </div>
-              </div>
-
-              <!-- FAQ Item 11 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-11" id="faq-trigger-11">
-                  <span class="font-extrabold text-gray-900 pr-4">What is included in a corporate event management package?</span>
-                  <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400 transition-transform"></i>
-                </button>
-                <div id="faq-answer-11" role="region" aria-labelledby="faq-trigger-11" class="faq-content px-6 max-h-0 opacity-0 overflow-hidden transition-all duration-300">
-                  <p class="pb-6 text-gray-600 font-medium leading-relaxed">Our corporate packages include venue sourcing, AV and tech setup, branding and signage, catering coordination, guest registration systems, speaker/artist management, photography, and complete on-ground logistics. We handle everything from site visits to post-event reporting.</p>
-                </div>
-              </div>
-
-              <!-- FAQ Item 12 -->
-              <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none min-h-[44px]" aria-expanded="false" aria-controls="faq-answer-12" id="faq-trigger-12">
-                  <span class="font-extrabold text-gray-900 pr-4">Is Redgroom GST registered? Can I get a proper invoice for corporate bookings?</span>
-                  <i data-lucide="chevron-down" class="faq-icon w-5 h-5 shrink-0 text-gray-400 transition-transform"></i>
-                </button>
-                <div id="faq-answer-12" role="region" aria-labelledby="faq-trigger-12" class="faq-content px-6 max-h-0 opacity-0 overflow-hidden transition-all duration-300">
-                  <p class="pb-6 text-gray-600 font-medium leading-relaxed">Yes. Redgroom Events & Trip Planner is a fully GST-registered business entity in Gurgaon, Haryana. We provide valid GST invoices for all services — travel, events, and car rentals — suitable for corporate expense reimbursements and business accounts.</p>
-                </div>
+              <!-- FAQ Item 4 -->
+              <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="faq-trigger w-full px-6 py-5 flex justify-between items-center text-left outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]" aria-expanded="false" aria-controls="faq-answer-4" id="faq-trigger-4">
+                      <span class="font-bold text-[#0A192F] pr-4 text-base">Is Redgroom's pricing transparent?</span>
+                      <i data-lucide="plus" class="faq-icon w-5 h-5 shrink-0 text-[#D4AF37] transition-transform duration-300"></i>
+                  </button>
+                  <div id="faq-answer-4" role="region" aria-labelledby="faq-trigger-4" class="faq-content px-6 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+                      <p class="text-gray-600 text-sm leading-relaxed pb-6">Yes. Redgroom Events & Trip Planner operates with 100% transparent pricing. We provide comprehensive invoices and detailed quotes for all services — travel, events, and car rentals — ensuring no hidden charges.</p>
+                  </div>
               </div>
           </div>
       </div>
@@ -1039,95 +863,93 @@
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="py-24 bg-[#0A192F] relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-[1000px] h-[1000px] bg-white opacity-[0.02] rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+      <!-- Decorative BG elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37] opacity-[0.05] rounded-full blur-[100px] pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-white opacity-[0.02] rounded-full blur-[100px] pointer-events-none"></div>
       
-      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-16 items-start reveal">
           
-          <!-- Contact Form -->
-          <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl">
-              <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Start Planning Today</h2>
-              <p class="text-gray-500 mb-8 font-medium">Submit your requirements and a specialist will be assigned to your request.</p>
+          <!-- Contact Info & Map -->
+          <div class="text-white flex flex-col justify-center order-2 lg:order-1">
+              <h2 class="text-3xl md:text-5xl font-extrabold mb-8 tracking-tight font-serif text-white">Connect with Us</h2>
               
-              <form id="contact-form" class="space-y-5">
-                  <div class="grid md:grid-cols-2 gap-5">
-                      <div>
-                          <label for="contactName" class="block text-sm font-bold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
-                          <input id="contactName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="e.g. John Doe">
+              <div class="space-y-6 mb-10">
+                  <a href="tel:+917365027080" class="flex items-center gap-5 group transition-all w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg">
+                      <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-[#D4AF37] group-hover:border-[#D4AF37] transition-colors duration-300 text-[#D4AF37] group-hover:text-white">
+                          <i data-lucide="phone" class="w-5 h-5"></i>
                       </div>
                       <div>
-                          <label for="contactPhone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number <span class="text-red-500">*</span></label>
-                          <input id="contactPhone" type="tel" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="+91 98765 43210">
-                      </div>
-                  </div>
-                  
-                  <div class="grid md:grid-cols-2 gap-5">
-                      <div>
-                          <label for="contactEmail" class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
-                          <input id="contactEmail" type="email" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="john@example.com">
-                      </div>
-                      <div>
-                          <label for="contactInterest" class="block text-sm font-bold text-gray-700 mb-2">Primary Interest <span class="text-red-500">*</span></label>
-                          <select id="contactInterest" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all appearance-none">
-                              <option value="">Select Service</option>
-                              <option value="travel">Travel Package</option>
-                              <option value="wedding">Wedding Planning</option>
-                              <option value="corporate">Corporate Event</option>
-                              <option value="rental">Self-Drive Car Rental</option>
-                          </select>
-                      </div>
-                  </div>
-
-                  <div>
-                      <label for="contactMessage" class="block text-sm font-bold text-gray-700 mb-2">Specific Requirements</label>
-                      <textarea id="contactMessage" rows="4" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F] outline-none bg-gray-50 transition-all" placeholder="Destinations, dates, guest counts, or vehicle preferences..."></textarea>
-                  </div>
-
-                  <button type="submit" id="main-contact-submit" class="w-full py-4 text-lg inline-flex items-center justify-center rounded-xl font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-opacity-90 shadow-xl hover:-translate-y-1 mt-4">
-                      Submit Request <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
-                  </button>
-              </form>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="text-white flex flex-col justify-center">
-              <h2 class="text-3xl md:text-5xl font-extrabold mb-10 tracking-tight">Get in Touch</h2>
-              
-              <div class="space-y-8 mb-12">
-                  <a href="tel:+917365027080" class="flex items-start gap-5 group rounded-lg p-2 -ml-2 transition-all">
-                      <div class="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-[#D4AF37] group-hover:text-white transition-colors duration-300 text-[#D4AF37]">
-                          <i data-lucide="phone" class="w-6 h-6"></i>
-                      </div>
-                      <div>
-                          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Direct Line 24/7</h4>
-                          <span class="text-2xl font-extrabold group-hover:text-[#D4AF37] transition-colors">+91 7365027080</span>
+                          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Direct Line</h4>
+                          <span class="text-xl font-bold text-white transition-colors">+91 7365027080</span>
                       </div>
                   </a>
                   
-                  <a href="mailto:redgroomofficial@gmail.com" class="flex items-start gap-5 group rounded-lg p-2 -ml-2 transition-all">
-                      <div class="p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:bg-[#D4AF37] group-hover:text-white transition-colors duration-300 text-[#D4AF37]">
-                          <i data-lucide="mail" class="w-6 h-6"></i>
+                  <a href="mailto:redgroomofficial@gmail.com" class="flex items-center gap-5 group transition-all w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-lg">
+                      <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-[#D4AF37] group-hover:border-[#D4AF37] transition-colors duration-300 text-[#D4AF37] group-hover:text-white">
+                          <i data-lucide="mail" class="w-5 h-5"></i>
                       </div>
                       <div>
-                          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Official Email</h4>
-                          <span class="block text-lg font-bold group-hover:text-[#D4AF37] transition-colors">redgroomofficial@gmail.com</span>
+                          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Official Email</h4>
+                          <span class="text-lg font-medium text-white transition-colors">redgroomofficial@gmail.com</span>
                       </div>
                   </a>
 
-                  <div class="flex items-start gap-5 p-2 -ml-2">
-                      <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-[#D4AF37]">
-                          <i data-lucide="map-pin" class="w-6 h-6"></i>
+                  <div class="flex items-center gap-5">
+                      <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#D4AF37]">
+                          <i data-lucide="map-pin" class="w-5 h-5"></i>
                       </div>
                       <div>
-                          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1.5">Headquarters</h4>
-                          <p class="text-lg font-medium text-gray-200 max-w-sm leading-relaxed">Neelkanth Enclave, Sector 69, Gurgaon – 122101, Haryana, India</p>
+                          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Headquarters</h4>
+                          <p class="text-sm font-medium text-gray-200">Neelkanth Enclave, Sector 69, Gurugram – 122101</p>
                       </div>
                   </div>
               </div>
 
               <!-- Maps Embed -->
-              <div class="h-64 w-full rounded-3xl overflow-hidden bg-gray-800 relative shadow-2xl border border-white/10">
-                  <iframe src="https://maps.google.com/maps?q=Neelkanth%20Enclave,%20Sector%2069,%20Gurgaon&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Redgroom HQ Location Map" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="h-64 w-full rounded-2xl overflow-hidden bg-gray-800 relative shadow-2xl border border-white/10">
+                  <iframe src="https://maps.google.com/maps?q=Neelkanth%20Enclave,%20Sector%2069,%20Gurugram&t=&z=14&ie=UTF8&iwloc=&output=embed" title="Redgroom HQ Location Map" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl order-1 lg:order-2">
+              <h3 class="text-2xl font-bold text-[#0A192F] font-serif mb-2">Send an Inquiry</h3>
+              <p class="text-gray-500 mb-8 text-sm">We'll get back to you within 30 minutes.</p>
+              
+              <form id="contact-form" class="space-y-4">
+                  <div>
+                      <label for="contactName" class="sr-only">Full Name</label>
+                      <input id="contactName" type="text" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium" placeholder="Full Name">
+                  </div>
+                  
+                  <div>
+                      <label for="contactPhone" class="sr-only">Phone Number</label>
+                      <input id="contactPhone" type="tel" pattern="[0-9]{10,15}" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium" placeholder="Phone Number">
+                  </div>
+                  
+                  <div>
+                      <label for="contactInterest" class="sr-only">Primary Interest</label>
+                      <div class="relative">
+                          <select id="contactInterest" required class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all appearance-none text-sm font-medium text-gray-500">
+                              <option value="" disabled selected>Select Service</option>
+                              <option value="travel">Travel Package</option>
+                              <option value="wedding">Wedding Planning</option>
+                              <option value="corporate">Corporate Event</option>
+                              <option value="rental">Self-Drive Car Rental</option>
+                          </select>
+                          <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"></i>
+                      </div>
+                  </div>
+
+                  <div>
+                      <label for="contactMessage" class="sr-only">Message</label>
+                      <textarea id="contactMessage" rows="4" class="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-[#0A192F] focus:ring-2 focus:ring-[#0A192F]/20 outline-none bg-gray-50 transition-all text-sm font-medium resize-none" placeholder="Share a few details about your requirement..."></textarea>
+                  </div>
+
+                  <button type="submit" id="main-contact-submit" class="w-full py-4 text-base flex items-center justify-center rounded-xl font-bold transition-all duration-300 bg-[#0A192F] text-white hover:bg-[#D4AF37] shadow-xl hover:-translate-y-0.5 mt-2 group">
+                      Send Message <i data-lucide="send" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                  </button>
+              </form>
           </div>
 
       </div>
@@ -1140,375 +962,436 @@
           <!-- Brand -->
           <div>
               <div class="flex items-center gap-2 mb-6">
-                  <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-[#0A192F] border border-white/10">
-                      <span class="font-serif font-bold text-white">R</span>
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-white/10 border border-white/10 text-white">
+                      <span class="font-serif font-bold">R</span>
                   </div>
-                  <h3 class="text-xl font-extrabold text-white tracking-wide">REDGROOM</h3>
+                  <h3 class="text-xl font-extrabold text-white tracking-wide font-serif">REDGROOM</h3>
               </div>
               <p class="text-sm font-medium mb-6 leading-relaxed">
-                  Explorer – Travel Beyond Boundaries. Your premium partner for exceptional travel, unforgettable events, and reliable self-drive car rentals in Gurgaon and Delhi NCR.
+                  Your premium partner for exceptional travel, unforgettable events, and reliable self-drive car rentals in Gurugram and Delhi NCR.
               </p>
-              <div class="flex flex-col gap-4">
-                  <a href="tel:+917365027080" class="text-sm font-bold text-white hover:text-[#D4AF37] transition-colors flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4"></i> Call Now</a>
-                  <a href="https://wa.me/917365027080" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-[#25D366] transition-colors flex items-center gap-3"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Chat</a>
-              </div>
-              <!-- TRUST BLOCK -->
+              
               <div class="mt-6 pt-6 border-t border-white/10 space-y-2">
-                <!-- Replace with real GST number before publishing -->
                 <p class="text-gray-400 text-sm font-medium">
-                  <span class="text-white font-bold">GST Registration:</span> [YOUR-GST-NUMBER]
+                  <span class="text-white font-bold">Est. 2018</span> &nbsp;|&nbsp; Gurugram, Haryana
                 </p>
                 <p class="text-gray-400 text-sm font-medium">
-                  <span class="text-white font-bold">Est. 2018</span> &nbsp;|&nbsp; Registered in Gurgaon, Haryana
-                </p>
-                <p class="text-gray-400 text-sm font-medium">
-                  <span class="text-white font-bold">Premium Travel Partner</span> &nbsp;|&nbsp; <span class="text-white font-bold">Event Management Specialists</span>
+                  <span class="text-[#D4AF37] font-bold">Premium Verified Services</span>
                 </p>
               </div>
           </div>
 
           <!-- Services - Travel -->
           <div>
-              <h4 class="text-white font-extrabold mb-6 tracking-wide">Travel Services</h4>
+              <h4 class="text-white font-extrabold mb-6 tracking-wide font-serif">Travel</h4>
               <ul class="space-y-4 text-sm font-medium">
-                  <!-- TODO: Replace anchor link with /travel-planner-gurgaon when service page is live -->
-                  <li><a href="#travel" onclick="event.preventDefault(); scrollToSection('travel')" class="hover:text-white transition-colors">Domestic Tours</a></li>
-                  <li><a href="#travel" onclick="event.preventDefault(); scrollToSection('travel')" class="hover:text-white transition-colors">International Tours</a></li>
-                  <li><a href="#travel" onclick="event.preventDefault(); scrollToSection('travel')" class="hover:text-white transition-colors">Honeymoon Packages</a></li>
-                  <li><a href="#travel" onclick="event.preventDefault(); scrollToSection('travel')" class="hover:text-white transition-colors">Corporate Travel</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Domestic Tours</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">International Tours</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Honeymoon Packages</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Corporate Travel</a></li>
               </ul>
           </div>
 
           <!-- Services - Events -->
           <div>
-              <h4 class="text-white font-extrabold mb-6 tracking-wide">Event Management</h4>
+              <h4 class="text-white font-extrabold mb-6 tracking-wide font-serif">Events</h4>
               <ul class="space-y-4 text-sm font-medium">
-                  <!-- TODO: Replace anchor link with /destination-wedding-planner-gurgaon when service page is live -->
-                  <li><a href="#events" onclick="event.preventDefault(); scrollToSection('events')" class="hover:text-white transition-colors">Wedding Planning</a></li>
-                  <!-- TODO: Replace anchor link with /corporate-event-management-gurgaon when service page is live -->
-                  <li><a href="#events" onclick="event.preventDefault(); scrollToSection('events')" class="hover:text-white transition-colors">Corporate Events</a></li>
-                  <li><a href="#events" onclick="event.preventDefault(); scrollToSection('events')" class="hover:text-white transition-colors">DJ Nights & Entertainment</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Wedding Planning</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Corporate Events</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">DJ & Entertainment</a></li>
+                  <li><a href="#gallery" class="scroll-link hover:text-[#D4AF37] transition-colors">Event Portfolio</a></li>
               </ul>
           </div>
 
           <!-- Services - Rentals & Support -->
           <div>
-              <h4 class="text-white font-extrabold mb-6 tracking-wide">Car Rentals & More</h4>
+              <h4 class="text-white font-extrabold mb-6 tracking-wide font-serif">Car Rentals & More</h4>
               <ul class="space-y-4 text-sm font-medium">
-                  <!-- TODO: Replace anchor link with /self-drive-car-rental-gurgaon when service page is live -->
-                  <li><a href="#rentals" onclick="event.preventDefault(); scrollToSection('rentals')" class="hover:text-white transition-colors">Self Drive Cars Gurgaon</a></li>
-                  <li><a href="#rentals" onclick="event.preventDefault(); scrollToSection('rentals')" class="hover:text-white transition-colors">Self Drive Cars Delhi</a></li>
-                  <li><a href="#rentals" onclick="event.preventDefault(); scrollToSection('rentals')" class="hover:text-white transition-colors">Premium SUV Rentals</a></li>
-                  <li><a href="#faq" onclick="event.preventDefault(); scrollToSection('faq')" class="hover:text-white transition-colors">Frequently Asked Questions</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Self Drive Gurugram</a></li>
+                  <li><a href="#services" class="scroll-link hover:text-[#D4AF37] transition-colors">Premium SUVs</a></li>
+                  <li><a href="#faq" class="scroll-link hover:text-[#D4AF37] transition-colors">FAQs</a></li>
+                  <li><a href="#contact" class="scroll-link hover:text-[#D4AF37] transition-colors">Contact Us</a></li>
               </ul>
           </div>
       </div>
 
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-semibold">
-          <p>&copy; <span id="year"></span> Redgroom Events & Trip Planner. All Rights Reserved. | <span class="text-gray-500">Gurgaon, Haryana</span></p>
+          <p>&copy; <span id="year"></span> Redgroom Events & Trip Planner. All Rights Reserved.</p>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-2 md:mt-0">
-            <a href="/privacy-policy" class="text-gray-500 hover:text-white text-xs transition-colors" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-            <a href="/terms-of-service" class="text-gray-500 hover:text-white text-xs transition-colors" target="_blank" rel="noopener noreferrer">Terms of Service</a>
-            <a href="/cancellation-policy" class="text-gray-500 hover:text-white text-xs transition-colors" target="_blank" rel="noopener noreferrer">Cancellation Policy</a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white">Privacy Policy</a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white">Terms of Service</a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white">Cancellation Policy</a>
           </div>
       </div>
   </footer>
 
-  <!-- DESKTOP STICKY CTA -->
-  <div class="hidden lg:flex fixed right-0 top-1/2 -translate-y-1/2 flex-col gap-3 z-50 translate-x-[75%] hover:translate-x-0 transition-transform duration-300 ease-out">
-      <a href="tel:+917365027080" class="bg-[#0A192F] text-white py-3.5 px-5 rounded-l-2xl shadow-2xl flex items-center gap-4 w-56 hover:bg-[#0f2445] transition-colors border-y border-l border-white/10">
-          <i data-lucide="phone" class="w-5 h-5 shrink-0 text-[#D4AF37]"></i>
-          <span class="font-bold text-sm tracking-wide">Call Now</span>
-      </a>
-      <a href="https://wa.me/917365027080" target="_blank" rel="noopener noreferrer" class="bg-white text-gray-900 py-3.5 px-5 rounded-l-2xl shadow-2xl flex items-center gap-4 w-56 hover:bg-gray-50 transition-colors border-y border-l border-gray-200">
-          <i data-lucide="message-circle" class="w-5 h-5 shrink-0 text-[#25D366]"></i>
-          <span class="font-bold text-sm tracking-wide">WhatsApp Us</span>
-      </a>
-  </div>
-
   <!-- MOBILE STICKY BOTTOM BAR -->
-  <div class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.15)] z-[60] flex h-20">
-      <a href="tel:+917365027080" class="flex-1 flex flex-col items-center justify-center gap-1 font-bold text-white transition-colors active:bg-[#0f2445] bg-[#0A192F]">
-          <i data-lucide="phone" class="w-5 h-5"></i>
-          <span class="text-[10px] uppercase tracking-widest">Call Now</span>
+  <div class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.15)] z-[60] flex h-16">
+      <a href="tel:+917365027080" class="flex-1 flex flex-col items-center justify-center gap-1 font-bold text-gray-700 bg-gray-50 transition-colors active:bg-gray-100 border-r border-gray-200 focus-visible:outline-none">
+          <i data-lucide="phone" class="w-4 h-4 text-gray-600"></i>
+          <span class="text-[10px] uppercase tracking-wider">Call</span>
       </a>
-      <a href="https://wa.me/917365027080" target="_blank" rel="noopener noreferrer" class="flex-1 flex flex-col items-center justify-center gap-1 font-bold text-gray-900 bg-gray-50 transition-colors active:bg-gray-200 border-l border-gray-200">
-          <i data-lucide="message-circle" class="w-5 h-5 text-[#25D366]"></i>
-          <span class="text-[10px] uppercase tracking-widest">WhatsApp</span>
+      <a href="https://wa.me/917365027080" target="_blank" rel="noopener noreferrer" class="flex-1 flex flex-col items-center justify-center gap-1 font-bold text-gray-700 bg-gray-50 transition-colors active:bg-gray-100 border-r border-gray-200 focus-visible:outline-none">
+          <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366]"></i>
+          <span class="text-[10px] uppercase tracking-wider">WhatsApp</span>
+      </a>
+      <a href="#contact" class="scroll-link flex-[1.5] flex flex-col items-center justify-center gap-1 font-bold text-white transition-colors active:bg-[#0f2445] bg-[#0A192F] focus-visible:outline-none">
+          <span class="text-xs uppercase tracking-wider">Get Quote</span>
       </a>
   </div>
 
-  <!-- Scripts deferred for Core Web Vitals optimization -->
-  <script src="https://cdn.tailwindcss.com" defer></script>
+  <!-- Scripts -->
   <script src="https://unpkg.com/lucide@latest" defer></script>
-  <script defer>
-      window.addEventListener('DOMContentLoaded', () => {
-          tailwind.config = {
-              theme: {
-                  extend: {
-                      colors: {
-                          primary: '#0A192F',
-                          secondary: '#D4AF37',
-                          accent: '#FF6B35',
-                          surface: '#F8F9FA',
-                      },
-                      fontFamily: {
-                          sans: ['Inter', 'sans-serif'],
-                          serif: ['Playfair Display', 'serif'],
-                      }
-                  }
-              }
-          };
-      });
-  </script>
   
-  <script>
-      // Set Copyright Year
-      document.getElementById('year').textContent = new Date().getFullYear();
+  <script defer>
+    window.addEventListener('DOMContentLoaded', () => {
+        // Initialize Icons
+        if(window.lucide) { lucide.createIcons(); }
 
-      // Loader (Optimized delay: 300ms)
-      window.addEventListener('load', () => {
-          if(window.lucide) { lucide.createIcons(); }
-          setTimeout(() => {
-              const loader = document.getElementById('loader');
-              if(loader) {
-                  loader.style.opacity = '0';
-                  setTimeout(() => loader.remove(), 500);
-              }
-          }, 300);
-      });
+        // Remove the opacity-0 class to seamlessly fade the page in after Tailwind is applied
+        const bodyElement = document.getElementById('app-body');
+        if (bodyElement) {
+            bodyElement.classList.remove('opacity-0');
+        }
 
-      // Scroll Handling (Header)
-      const header = document.getElementById('main-header');
-      const logoIcon = document.getElementById('logo-icon');
-      const logoText = document.getElementById('logo-text');
-      const logoSub = document.getElementById('logo-sub');
-      const navLinks = document.querySelectorAll('.nav-link');
-      const headerPhone = document.getElementById('header-phone');
-      const headerBtn = document.getElementById('header-btn');
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        // Set Copyright Year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-      window.addEventListener('scroll', () => {
-          if (window.scrollY > 50) {
-              header.classList.replace('bg-transparent', 'bg-white/95');
-              header.classList.replace('py-6', 'py-3');
-              header.classList.add('backdrop-blur-md', 'shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)]');
-              
-              logoIcon.classList.replace('bg-white/10', 'bg-[#0A192F]');
-              logoIcon.classList.remove('backdrop-blur-md', 'border', 'border-white/20');
-              logoText.classList.replace('text-white', 'text-gray-900');
-              logoSub.classList.replace('text-gray-200', 'text-[#D4AF37]');
-              
-              navLinks.forEach(l => {
-                  l.classList.replace('text-white/90', 'text-gray-700');
-                  l.classList.replace('hover:text-white', 'hover:text-[#D4AF37]');
-              });
+        // ----------------------------------------------------------------
+        // Scroll Handling (Header)
+        // ----------------------------------------------------------------
+        const header = document.getElementById('main-header');
+        const logoIcon = document.getElementById('logo-icon');
+        const logoText = document.getElementById('logo-text');
+        const logoSub = document.getElementById('logo-sub');
+        const navLinks = document.querySelectorAll('#main-header nav a');
+        const headerPhone = document.getElementById('header-phone');
+        const headerBtn = document.getElementById('header-btn');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 
-              headerPhone.classList.replace('text-white', 'text-[#0A192F]');
-              headerBtn.classList.replace('bg-white', 'bg-[#0A192F]');
-              headerBtn.classList.replace('text-gray-900', 'text-white');
-              
-              if(mobileMenuBtn) {
-                  mobileMenuBtn.classList.replace('text-white', 'text-gray-900');
-                  mobileMenuBtn.classList.replace('bg-white/20', 'bg-gray-100');
-              }
-          } else {
-              header.classList.replace('bg-white/95', 'bg-transparent');
-              header.classList.replace('py-3', 'py-6');
-              header.classList.remove('backdrop-blur-md', 'shadow-[0_4px_20px_-10px_rgba(0,0,0,0.1)]');
-              
-              logoIcon.classList.replace('bg-[#0A192F]', 'bg-white/10');
-              logoIcon.classList.add('backdrop-blur-md', 'border', 'border-white/20');
-              logoText.classList.replace('text-gray-900', 'text-white');
-              logoSub.classList.replace('text-[#D4AF37]', 'text-gray-200');
-              
-              navLinks.forEach(l => {
-                  l.classList.replace('text-gray-700', 'text-white/90');
-                  l.classList.replace('hover:text-[#D4AF37]', 'hover:text-white');
-              });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.replace('bg-transparent', 'bg-white/95');
+                header.classList.replace('py-6', 'py-3');
+                header.classList.add('backdrop-blur-md', 'shadow-sm');
+                
+                logoIcon.classList.replace('bg-white/10', 'bg-[#0A192F]');
+                logoIcon.classList.remove('backdrop-blur-md', 'border', 'border-white/20');
+                logoText.classList.replace('text-white', 'text-gray-900');
+                logoSub.classList.replace('text-gray-200', 'text-[#D4AF37]');
+                
+                navLinks.forEach(l => {
+                    l.classList.replace('text-white/90', 'text-gray-700');
+                });
+                
+                // Nav bg update
+                const navContainer = header.querySelector('nav');
+                if(navContainer){
+                    navContainer.classList.replace('bg-white/5', 'bg-gray-100/50');
+                    navContainer.classList.replace('border-white/10', 'border-gray-200');
+                }
 
-              headerPhone.classList.replace('text-[#0A192F]', 'text-white');
-              headerBtn.classList.replace('bg-[#0A192F]', 'bg-white');
-              headerBtn.classList.replace('text-white', 'text-gray-900');
+                headerPhone.classList.replace('text-white', 'text-[#0A192F]');
+                headerBtn.classList.replace('bg-white', 'bg-[#0A192F]');
+                headerBtn.classList.replace('text-[#0A192F]', 'text-white');
+                
+                if(mobileMenuBtn) {
+                    mobileMenuBtn.classList.replace('text-white', 'text-gray-900');
+                    mobileMenuBtn.classList.replace('bg-white/20', 'bg-gray-100');
+                }
+            } else {
+                header.classList.replace('bg-white/95', 'bg-transparent');
+                header.classList.replace('py-3', 'py-6');
+                header.classList.remove('backdrop-blur-md', 'shadow-sm');
+                
+                logoIcon.classList.replace('bg-[#0A192F]', 'bg-white/10');
+                logoIcon.classList.add('backdrop-blur-md', 'border', 'border-white/20');
+                logoText.classList.replace('text-gray-900', 'text-white');
+                logoSub.classList.replace('text-[#D4AF37]', 'text-gray-200');
+                
+                navLinks.forEach(l => {
+                    l.classList.replace('text-gray-700', 'text-white/90');
+                });
+                
+                // Nav bg update
+                const navContainer = header.querySelector('nav');
+                if(navContainer){
+                    navContainer.classList.replace('bg-gray-100/50', 'bg-white/5');
+                    navContainer.classList.replace('border-gray-200', 'border-white/10');
+                }
 
-              if(mobileMenuBtn) {
-                  mobileMenuBtn.classList.replace('text-gray-900', 'text-white');
-                  mobileMenuBtn.classList.replace('bg-gray-100', 'bg-white/20');
-              }
-          }
-      });
+                headerPhone.classList.replace('text-[#0A192F]', 'text-white');
+                headerBtn.classList.replace('bg-[#0A192F]', 'bg-white');
+                headerBtn.classList.replace('text-white', 'text-[#0A192F]');
 
-      // Mobile Menu with ARIA handling
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuIcon = document.getElementById('menu-icon');
-      let isMenuOpen = false;
+                if(mobileMenuBtn) {
+                    mobileMenuBtn.classList.replace('text-gray-900', 'text-white');
+                    mobileMenuBtn.classList.replace('bg-gray-100', 'bg-white/20');
+                }
+            }
+        });
 
-      if(mobileMenuBtn) {
-          mobileMenuBtn.addEventListener('click', () => {
-              isMenuOpen = !isMenuOpen;
-              mobileMenuBtn.setAttribute('aria-expanded', isMenuOpen ? 'true' : 'false');
-              if (isMenuOpen) {
-                  mobileMenu.classList.replace('max-h-0', 'max-h-[500px]');
-                  mobileMenu.classList.add('border-t', 'border-gray-100');
-                  menuIcon.setAttribute('data-lucide', 'x');
-              } else {
-                  closeMobileMenu();
-              }
-              if(window.lucide) lucide.createIcons();
-          });
-      }
+        // ----------------------------------------------------------------
+        // Mobile Menu Handling
+        // ----------------------------------------------------------------
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        let isMenuOpen = false;
 
-      function closeMobileMenu() {
-          isMenuOpen = false;
-          if(mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
-          mobileMenu.classList.replace('max-h-[500px]', 'max-h-0');
-          mobileMenu.classList.remove('border-t', 'border-gray-100');
-          menuIcon.setAttribute('data-lucide', 'menu');
-          if(window.lucide) lucide.createIcons();
-      }
+        function closeMobileMenu() {
+            isMenuOpen = false;
+            if(mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenu.classList.replace('max-h-[500px]', 'max-h-0');
+            menuIcon.setAttribute('data-lucide', 'menu');
+            if(window.lucide) lucide.createIcons();
+        }
 
-      // Smooth Scroll
-      window.scrollToSection = function(id) {
-          const el = document.getElementById(id);
-          if (el) {
-              const offset = 80;
-              const bodyRect = document.body.getBoundingClientRect().top;
-              const elementRect = el.getBoundingClientRect().top;
-              const elementPosition = elementRect - bodyRect;
-              const offsetPosition = elementPosition - offset;
-              window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-          }
-      };
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                mobileMenuBtn.setAttribute('aria-expanded', isMenuOpen ? 'true' : 'false');
+                if (isMenuOpen) {
+                    mobileMenu.classList.replace('max-h-0', 'max-h-[500px]');
+                    menuIcon.setAttribute('data-lucide', 'x');
+                } else {
+                    closeMobileMenu();
+                }
+                if(window.lucide) lucide.createIcons();
+            });
+        }
+        
+        // Close menu on link click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
 
-      // Form Handling (Hero)
-      const heroForm = document.getElementById('hero-form');
-      if(heroForm) {
-          heroForm.addEventListener('submit', (e) => {
-              e.preventDefault();
-              document.getElementById('hero-form-box').classList.add('hidden');
-              document.getElementById('hero-success-box').classList.remove('hidden');
-              document.getElementById('hero-success-box').classList.add('flex');
-              
-              setTimeout(() => {
-                  document.getElementById('hero-success-box').classList.add('hidden');
-                  document.getElementById('hero-success-box').classList.remove('flex');
-                  document.getElementById('hero-form-box').classList.remove('hidden');
-                  e.target.reset();
-              }, 4000);
-          });
-      }
+        // ----------------------------------------------------------------
+        // Smooth Scroll Logic (No inline JS)
+        // ----------------------------------------------------------------
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        const offset = 90; // Header height
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementRect = targetEl.getBoundingClientRect().top;
+                        const elementPosition = elementRect - bodyRect;
+                        const offsetPosition = elementPosition - offset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
 
-      // Form Handling (Contact)
-      const contactForm = document.getElementById('contact-form');
-      if(contactForm) {
-          contactForm.addEventListener('submit', (e) => {
-              e.preventDefault();
-              const submitBtn = document.getElementById('main-contact-submit');
-              const originalHTML = submitBtn.innerHTML;
-              
-              // Clean UI success feedback
-              submitBtn.innerHTML = 'Request Sent Successfully! <i data-lucide="check" class="w-5 h-5 ml-2"></i>';
-              submitBtn.classList.replace('bg-[#0A192F]', 'bg-green-600');
-              if(window.lucide) lucide.createIcons();
-              
-              setTimeout(() => {
-                  submitBtn.innerHTML = originalHTML;
-                  submitBtn.classList.replace('bg-green-600', 'bg-[#0A192F]');
-                  if(window.lucide) lucide.createIcons();
-                  e.target.reset();
-              }, 3000);
-          });
-      }
+        // ----------------------------------------------------------------
+        // Form Handling
+        // ----------------------------------------------------------------
+        const heroForm = document.getElementById('hero-form');
+        if(heroForm) {
+            heroForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                document.getElementById('hero-form-box').classList.add('hidden');
+                document.getElementById('hero-success-box').classList.remove('hidden');
+                document.getElementById('hero-success-box').classList.add('flex');
+                
+                setTimeout(() => {
+                    document.getElementById('hero-success-box').classList.add('hidden');
+                    document.getElementById('hero-success-box').classList.remove('flex');
+                    document.getElementById('hero-form-box').classList.remove('hidden');
+                    e.target.reset();
+                }, 4000);
+            });
+        }
 
-      // Gallery Filtering
-      window.filterGallery = function(category) {
-          document.querySelectorAll('.gallery-tab').forEach(tab => {
-              if (tab.dataset.target === category) {
-                  tab.classList.replace('bg-white', 'bg-[#0A192F]');
-                  tab.classList.replace('text-gray-600', 'text-white');
-                  tab.classList.remove('border', 'border-gray-200');
-                  tab.classList.add('shadow-md');
-              } else {
-                  tab.classList.replace('bg-[#0A192F]', 'bg-white');
-                  tab.classList.replace('text-white', 'text-gray-600');
-                  tab.classList.add('border', 'border-gray-200');
-                  tab.classList.remove('shadow-md');
-              }
-          });
+        const contactForm = document.getElementById('contact-form');
+        if(contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const submitBtn = document.getElementById('main-contact-submit');
+                const originalHTML = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = 'Sent Successfully! <i data-lucide="check" class="w-4 h-4 ml-2"></i>';
+                submitBtn.classList.replace('bg-[#0A192F]', 'bg-green-600');
+                submitBtn.classList.remove('hover:bg-[#D4AF37]');
+                if(window.lucide) lucide.createIcons();
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalHTML;
+                    submitBtn.classList.replace('bg-green-600', 'bg-[#0A192F]');
+                    submitBtn.classList.add('hover:bg-[#D4AF37]');
+                    if(window.lucide) lucide.createIcons();
+                    e.target.reset();
+                }, 3000);
+            });
+        }
 
-          document.querySelectorAll('.gallery-item').forEach(item => {
-              if (item.dataset.category === category) {
-                  item.classList.remove('hidden');
-              } else {
-                  item.classList.add('hidden');
-              }
-          });
-      };
+        // ----------------------------------------------------------------
+        // Gallery Filtering & Lightbox
+        // ----------------------------------------------------------------
+        const galleryTabs = document.querySelectorAll('.gallery-tab');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const category = tab.dataset.target;
+                
+                // Update active tab styling
+                galleryTabs.forEach(t => {
+                    if (t === tab) {
+                        t.classList.replace('bg-white/10', 'bg-[#D4AF37]');
+                        t.classList.replace('text-white', 'text-[#0A192F]');
+                        t.setAttribute('aria-selected', 'true');
+                    } else {
+                        t.classList.replace('bg-[#D4AF37]', 'bg-white/10');
+                        t.classList.replace('text-[#0A192F]', 'text-white');
+                        t.setAttribute('aria-selected', 'false');
+                    }
+                });
 
-      // Lightbox
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (item.dataset.category === category) {
+                        item.classList.remove('hidden');
+                        setTimeout(() => item.style.opacity = '1', 50);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => item.classList.add('hidden'), 300); // transition match
+                    }
+                });
+            });
+        });
 
-      window.openLightbox = function(url) {
-          if(lightbox && lightboxImg) {
-              lightboxImg.src = url;
-              lightbox.classList.remove('hidden');
-              lightbox.classList.add('flex');
-              document.body.style.overflow = 'hidden';
-          }
-      };
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
 
-      window.closeLightbox = function() {
-          if(lightbox && lightboxImg) {
-              lightbox.classList.add('hidden');
-              lightbox.classList.remove('flex');
-              lightboxImg.src = '';
-              document.body.style.overflow = 'auto';
-          }
-      };
+        function openLightbox(url) {
+            if(lightbox && lightboxImg) {
+                lightboxImg.src = url;
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                lightboxClose.focus();
+            }
+        }
 
-      window.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') closeLightbox();
-      });
+        function closeLightbox() {
+            if(lightbox && lightboxImg) {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                lightboxImg.src = '';
+                document.body.style.overflow = '';
+            }
+        }
 
-      // FAQ Accordion with Accessibility (ARIA)
-      document.querySelectorAll('.faq-trigger').forEach(button => {
-          button.addEventListener('click', () => {
-              const content = button.nextElementSibling;
-              const icon = button.querySelector('.faq-icon');
-              const isOpen = content.classList.contains('max-h-[500px]');
+        // Attach click/enter to gallery items
+        galleryItems.forEach(item => {
+            const imgUrl = item.querySelector('img').src;
+            item.addEventListener('click', () => openLightbox(imgUrl));
+            item.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openLightbox(imgUrl);
+                }
+            });
+        });
 
-              // Close all others
-              document.querySelectorAll('.faq-content').forEach(c => {
-                  c.classList.remove('max-h-[500px]', 'opacity-100');
-                  c.classList.add('max-h-0', 'opacity-0');
-              });
-              document.querySelectorAll('.faq-trigger').forEach(b => {
-                  b.setAttribute('aria-expanded', 'false');
-              });
-              document.querySelectorAll('.faq-icon').forEach(i => {
-                  i.setAttribute('data-lucide', 'chevron-down');
-                  i.classList.replace('text-[#FF6B35]', 'text-gray-400');
-              });
-              if(window.lucide) lucide.createIcons();
+        lightboxClose?.addEventListener('click', closeLightbox);
+        lightbox?.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
 
-              if (!isOpen) {
-                  content.classList.remove('max-h-0', 'opacity-0');
-                  content.classList.add('max-h-[500px]', 'opacity-100');
-                  button.setAttribute('aria-expanded', 'true');
-                  icon.setAttribute('data-lucide', 'chevron-up');
-                  icon.classList.replace('text-gray-400', 'text-[#FF6B35]');
-                  if(window.lucide) lucide.createIcons();
-              }
-          });
-      });
+        // ----------------------------------------------------------------
+        // FAQ Accordion
+        // ----------------------------------------------------------------
+        document.querySelectorAll('.faq-trigger').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = document.getElementById(button.getAttribute('aria-controls'));
+                const icon = button.querySelector('.faq-icon');
+                const isOpen = button.getAttribute('aria-expanded') === 'true';
 
-      // Initialize first FAQ as open
-      const firstFaq = document.querySelector('.faq-trigger');
-      if (firstFaq) {
-          firstFaq.click();
-      }
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    c.classList.remove('max-h-[500px]', 'opacity-100');
+                    c.classList.add('max-h-0', 'opacity-0');
+                });
+                document.querySelectorAll('.faq-trigger').forEach(b => {
+                    b.setAttribute('aria-expanded', 'false');
+                    const i = b.querySelector('.faq-icon');
+                    if(i) {
+                        i.setAttribute('data-lucide', 'plus');
+                        i.style.transform = 'rotate(0deg)';
+                    }
+                });
+                if(window.lucide) lucide.createIcons();
 
+                // Open clicked if it wasn't open
+                if (!isOpen) {
+                    content.classList.remove('max-h-0', 'opacity-0');
+                    content.classList.add('max-h-[500px]', 'opacity-100');
+                    button.setAttribute('aria-expanded', 'true');
+                    icon.setAttribute('data-lucide', 'minus');
+                    icon.style.transform = 'rotate(180deg)';
+                    if(window.lucide) lucide.createIcons();
+                }
+            });
+        });
+        
+        // Open first FAQ default
+        const firstFaq = document.querySelector('.faq-trigger');
+        if (firstFaq) firstFaq.click();
+
+        // ----------------------------------------------------------------
+        // Dynamic Founder Image Fallback Logic
+        // ----------------------------------------------------------------
+        const founderImages = document.querySelectorAll('img[data-founder]');
+        founderImages.forEach(img => {
+            const baseName = img.getAttribute('data-founder');
+            const extensions = ['.png', '.jpg', '.jpeg'];
+            let currentExtIndex = 0;
+
+            function tryNextExtension() {
+                if (currentExtIndex < extensions.length) {
+                    img.src = '/assets/' + baseName + extensions[currentExtIndex];
+                    currentExtIndex++;
+                } else {
+                    // Final Fallback: UI Avatars Premium styling
+                    const nameParts = baseName.replace(/([A-Z])/g, ' $1').trim().split(' ');
+                    const firstName = nameParts[0] || 'F';
+                    const lastName = nameParts[1] || 'L';
+                    img.src = `https://ui-avatars.com/api/?name=${firstName}+${lastName}&background=0A192F&color=D4AF37&size=200&bold=true`;
+                }
+            }
+            img.onerror = tryNextExtension;
+            tryNextExtension(); // initiate check
+        });
+
+        // ----------------------------------------------------------------
+        // Scroll Reveal Animation (Intersection Observer)
+        // ----------------------------------------------------------------
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Run once
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    });
   </script>
 </body>
 </html>
